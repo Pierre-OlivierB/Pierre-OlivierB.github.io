@@ -69,9 +69,9 @@ var bool2;
 function changeImage() {
 
     let Image1 = new Image(300, 400);
-        Image1.src="11.jpg";
+        Image1.src="./img/11.jpg";
     let Image2 = new Image(300, 400);
-        Image2.src="12.jpg";
+        Image2.src="./img/12.jpg";
     let images =[Image1,Image2];
     if (bool2==true) {
         bool2=false;
