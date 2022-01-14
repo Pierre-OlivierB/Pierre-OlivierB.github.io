@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.collapsible');
-    var instances = M.Collapsible.init(elems, {
+    let elems = document.querySelectorAll('.collapsible');
+    let instances = M.Collapsible.init(elems, {
         accordion: false
     });
   });
