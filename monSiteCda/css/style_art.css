@@ -4,14 +4,31 @@
 .page_title{
     width: 15%;
   }
-.bones_article{
+/* .bones_article{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+} */
 .bones_title{
     border: 1px solid black;
     background: linear-gradient(to top, rgb(8, 8, 8,.6), rgb(246, 241, 241,.2));
     color: white;
+}
+.bones_article{
+    border: 1px solid black;
+    columns: 18em;
+    column-gap: 3em;
+    column-rule: 1px solid gray;
+    text-align: justify;
+    hyphens: auto;
+    width:80%;
+    transform: translateX(20%);
+    justify-content: center;
+}
+.bones_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 101%;
 }
