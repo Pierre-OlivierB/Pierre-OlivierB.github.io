@@ -10,3 +10,8 @@
     justify-content: center;
     align-items: center;
 }
+.bones_title{
+    border: 1px solid black;
+    background: linear-gradient(to top, rgb(8, 8, 8,.6), rgb(246, 241, 241,.2));
+    color: white;
+}
