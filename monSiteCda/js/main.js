@@ -48,7 +48,7 @@ testFour.setAttribute("style", `transform:translateY(${positionTestFour}px)`);
 // fin effet esclaier
 // gestion du load dans un temps imparti
 window.onload = siAttente();
-let ajout=10;
+let ajout=20;
 var nonAction=null;
 var enAttente=null;
 
@@ -67,11 +67,11 @@ function calculPosition(){
     testTwo.setAttribute("style", `transform:translateY(${positionTestTwo}px)`);
     if(positionTestTwo>80){
       positionTestTwo=100
-      positionTestThree+=ajout*2;
+      positionTestThree+=ajout*3;
     testThree.setAttribute("style", `transform:translateY(${positionTestThree}px)`);
       if(positionTestThree>80){
         positionTestThree=100
-        positionTestFour+=ajout*2;
+        positionTestFour+=ajout*3;
         testFour.setAttribute("style", `transform:translateY(${positionTestFour}px)`);
         if(positionTestFour>180){
           clearInterval(nonAction);

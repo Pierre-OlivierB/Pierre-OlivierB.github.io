@@ -46,7 +46,7 @@ testThreeVeille.setAttribute("style", `transform:translate(250px,${positionTestT
 // fin effet esclaier
 
 window.onload = siAttente();
-let ajout=10;
+let ajout=20;
 var nonAction=null;
 var enAttente=null;
 
@@ -65,7 +65,7 @@ function calculPosition(){
     testTwoVeille.setAttribute("style", `transform:translate(30%,${positionTestTwoVeille}px)`);
     if(positionTestTwoVeille>0){
       positionTestTwoVeille=30;
-      positionTestThreeVeille+=ajout*2;
+      positionTestThreeVeille+=ajout*3;
     testThreeVeille.setAttribute("style", `transform:translate(30%,${positionTestThreeVeille}px)`);
       if(positionTestThreeVeille>80){
         clearInterval(nonAction);

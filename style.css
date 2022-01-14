@@ -6,7 +6,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed, local;
-    height: 115%;
+    height: 100%;
 }
 .web_title{
   text-decoration: underline;
