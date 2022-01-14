@@ -20,7 +20,7 @@
     justify-content: center;
     height: 100%;
     width: 30%;
-    background: #0050ef center no-repeat url("./linkdin_button.png");
+    background: #0050ef center no-repeat url("../img/linkdin_button.png");
 }
 .card_twit{
     display: flex;
@@ -28,7 +28,7 @@
     justify-content: center;
     height: 100%;
     width: 30%;
-    background: #1ca5b8 center no-repeat url("./github_button.png");
+    background: #1ca5b8 center no-repeat url("../img/github_button.png");
 }
 .card_gitH{
     display: flex;
@@ -36,7 +36,7 @@
     justify-content: center;
     height: 100%;
     width: 30%;
-    background: #ffbc26 center no-repeat url("./warning_button.png");
+    background: #ffbc26 center no-repeat url("../img/warning_button.png");
 }
 .card_desc_profil{
     width: 70%;
