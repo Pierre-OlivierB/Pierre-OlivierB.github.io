@@ -1,3 +1,12 @@
 .background_collapse{
     background-color: #556B2F;
 }
+.page_title{
+    width: 15%;
+  }
+.bones_article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
