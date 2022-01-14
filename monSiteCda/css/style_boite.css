@@ -1,0 +1,109 @@
+.card_Boite{
+    background-color: aquamarine;
+    border: 1px solid black;
+    text-align: center;
+  }
+  .container_Boite{
+    display: grid;
+    grid-template: "testOneBoite testOneBoite" 40%
+                  "testTwoBoite testTwoBoite"40%;
+    grid-gap: 50px;
+    transform: translateX(20%);
+  }
+  #testOneBoite{
+    background: 
+    linear-gradient(to bottom,#556B2F,#808000);
+    grid-area:testOneBoite;
+    width: 60%;
+  }
+  #testTwoBoite{
+    background: 
+    linear-gradient(to bottom,#556B2F,#808000);
+    grid-area:testTwoBoite;
+    width: 60%;
+  }
+.white_card{
+    width:80%;
+    height: 30%;
+    background-color: white;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    overflow: scroll;
+    text-overflow: ellipsis;
+}
+.img_dim{
+    margin-top: 3%;
+    width: 80%;
+    height: 60%;
+}
+.center_page{
+    display: flex;
+    justify-content: center;
+}
+/* boîte 2 */
+.container_boite2{
+  width: 100%;
+  height: 50%;
+}
+.box_boite2{
+  width: 100%;
+  height: 25%;
+  border: 1px solid black;
+  background-color: rgb(255,215,215);
+}
+@media screen and (min-width: 900px) and (max-width: 1300px){
+  .box_boite2{
+    background-color: red;
+    transition: background-color 5s ease-in-out;
+  }
+}
+/* boîte 3 */
+.table{
+  border: double black 2px;
+  width: 100%;
+  height: 100%;
+}
+.line_table{
+  border: solid black 1px;
+  height: 10%;
+}
+.card_turn{
+  width: 300px;
+  text-align: center;
+  font-size:30px ;
+}
+.color{
+  background-color:white
+}
+.line_flex{
+  display: flex;
+}
+/* boîte 5 */
+.chronometre{
+  margin: auto ;
+  width: 300px;
+  text-align: center;
+  
+}
+
+.tim{
+  margin: auto;
+  width: 300px;
+  border: 1px solid rgba(0,0,0,0.5);
+  padding:5px 0;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: digital;
+  margin-bottom: 10px;
+
+
+}
+
+button{
+  background: #3498db;
+  color: #fff;
+  width: 70px;
+  border-radius: 5px;
+  line-height: 1.5em;
+  border: none
+}

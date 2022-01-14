@@ -1,0 +1,47 @@
+.card_veille{
+    background-color: aquamarine;
+    border: 1px solid black;
+    text-align: center;
+  }
+  .container_veille{
+    display: grid;
+  grid-template: "testOneVeille testOneVeille" 300px
+                  "testTwoVeille testTwoVeille"300px
+                  "testThreeVeille testThreeVeille"300px
+                  "testFourVeille testFourVeille" 300px;
+  grid-gap: 15px;
+  }
+  #testOneVeille{
+  background: linear-gradient(to top, rgb(8, 8, 8,.6), rgb(246, 241, 241,.2)),
+  center no-repeat url("./screen_page_veille_exception.jpg");
+  grid-area:testOneVeille;
+  width: 60%;
+  }
+  #testTwoVeille{
+  background: linear-gradient(to top, rgb(8, 8, 8,.6), rgb(246, 241, 241,.2)),
+  center no-repeat url("./screen_page_veille_threejs.jpg");
+  grid-area:testTwoVeille;
+  width: 60%;
+  }
+  #testThreeVeille{
+    background: linear-gradient(to top, rgb(8, 8, 8,.6), rgb(246, 241, 241,.2)),
+    center no-repeat url("./screen_page_veille_materialize.jpg");
+    grid-area:testThreeVeille;
+    width: 60%;
+    }
+  /*#testFourVeille{
+  background-color: cadetblue;
+  grid-area:testFourVeille;
+  width: 60%;
+  } */
+  .transformTestVeille{
+  transform: translateY(50px);
+  }
+  .experimentVeille{
+    height: 200px;
+  }
+  .clay{
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }

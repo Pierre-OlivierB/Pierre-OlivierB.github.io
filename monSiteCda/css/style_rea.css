@@ -1,0 +1,22 @@
+.card_rea{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* background:linear-gradient(to top rgb(8, 8, 8), rgb(246, 241, 241)) !important; */
+}
+.img_lecteur_audio {
+    background: linear-gradient(to top, rgb(8, 8, 8,.6), rgb(246, 241, 241,.2)), 
+    center/contain no-repeat url("./screen_rea_audio.jpg");
+}
+.img_site_couture{
+    background: linear-gradient(to top, rgb(8, 8, 8,.6), rgb(246, 241, 241,.2)), 
+    center/contain no-repeat url("./screen_rea_couture.jpg")
+}
+.img_ecosia{
+    background: linear-gradient(to top, rgb(8, 8, 8,.6), rgb(246, 241, 241,.2)), 
+    center/contain no-repeat url("./screen_rea_ecosia.jpg")
+}
+.img_marmiton{
+    background: linear-gradient(to top, rgb(8, 8, 8,.6), rgb(246, 241, 241,.2)), 
+    center/contain no-repeat url("./screen_rea_marmiton.jpg")
+}

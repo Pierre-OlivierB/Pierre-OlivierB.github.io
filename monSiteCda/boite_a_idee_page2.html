@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style_boite.css">
+    <title>Mon site CDA</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav id="top_nav" class="black">
+            <a href="./index.html" class="web_title">Bienvenue sur mon site CDA</a>
+            <div class="page_title">Boîte à idées</div>
+            <div class="three_right_buttons">
+                <div class="nav_card_link"><a href="https://www.linkedin.com/in/pierre-olivier-baudino-5a49511a3/"
+                        class="nav_redirec_contact" target="_blank"></a></div>
+                <div class="nav_card_twit"><a href="https://github.com/Pierre-OlivierB" class="nav_redirec_contact"
+                        target="_blank" rel="noopener noreferrer"></a></div>
+                <div class="nav_card_gitH"><a href="warning.html" class="nav_redirec_contact" target="_blank"
+                        rel="noopener noreferrer"></a></div>
+            </div>
+        </nav>
+
+        <!-- <nav></nav> -->
+        <ul id="slide-out" class="sidenav backgroundc_olive">
+            <li>
+                <div class="user-view orga_nav">
+                    <a href="#user"><img class="circle picture_nav" src="../PXL_20211002_133200807.MP.jpg"></a>
+                    <a href="#name"><span class="white-text name text_align_cent border_white">Pierre-Olivier <br> BAUDINO</span></a>
+                </div>
+            </li>
+            <li><a class="waves-effect text_align_cent inactive_a_white" href="index.html">Accueil</a></li>
+            <li><a class="waves-effect text_align_cent inactive_a_white" href="presentation.html">Présentation</a></li>
+            <li><a class="waves-effect text_align_cent inactive_a_white" href="realisations.html">Réalisations</a></li>
+            <li><a class="waves-effect text_align_cent inactive_a_white" href="veille.html">Veille</a></li>
+            <li><a class="waves-effect text_align_cent inactive_a_white" href="contact.html">Contact</a></li>
+            <li class="active active_li_white"><a class="waves-effect text_align_cent active_a_white" href="boite_a_idees.html">Boîte à idées</a></li>
+        </ul>
+        <a href="#" data-target="slide-out" class="sidenav-trigger"><img src="nav_button.png" class="nav_position"></a>
+
+    </header>
+    <!-- test -->
+    <div class="test">
+        <div class="container_Boite">
+            <div data-target="test" class="card_Boite" id="testOneBoite">
+                <a href="./screen_idea_choose_logo_combi.jpg" target="_blank" rel="noopener noreferrer"><img
+                        class="img_dim" src="./screen_idea_choose_logo_combi.jpg" alt=""></a>
+                <div class="white_card" action="">
+                    <table class="table">
+                        <tbody id="test">
+                            <tr class="line_table">
+                                <td class="line_table">couleur(rgb)</td>
+                                <td class="line_table">
+                                    <div class="line_flex">
+                                        0
+                                        <input oninput="changerStyle()" onchange="changerStyle()" type="range" min="0"
+                                            max="255" step="1" class="chiffre_choisi" value="0">
+                                        255
+                                    </div>
+                                </td>
+                                <td rowspan="6" class="line_table card_turn">
+                                    <p id="carte" class="">Titre de test</p>
+                                </td>
+                            </tr>
+                            <tr class="line_table">
+                                <td class="line_table">padding</td>
+                                <td class="line_table">
+                                    <div class="line_flex">
+                                        0
+                                        <input oninput="changerStyle()" onchange="changerStyle()" type="range" min="0"
+                                            max="30" step="1" class="chiffre_choisi" value="0">
+                                        30
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr class="line_table">
+                                <td class="line_table">height</td>
+                                <td class="line_table">
+                                    <div class="line_flex">
+                                        0
+                                        <input oninput="changerStyle()" onchange="changerStyle()" type="range" min="0"
+                                            max="200" step="1" class="chiffre_choisi" value="0">
+                                        200
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr class="line_table">
+                                <td class="line_table">width</td>
+                                <td class="line_table">
+                                    <div class="line_flex">
+                                        0
+                                        <input oninput="changerStyle()" onchange="changerStyle()" type="range" min="0"
+                                            max="200" step="1" class="chiffre_choisi" value="0">
+                                        200
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr class="line_table">
+                                <td class="line_table">arrondi</td>
+                                <td class="line_table">
+                                    <div class="line_flex">
+                                        0
+                                        <input oninput="changerStyle()" onchange="changerStyle()" type="range" min="0"
+                                            max="30" step="1" class="chiffre_choisi" value="0">
+                                        30
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr class="line_table">
+                                <td class="line_table">rotation</td>
+                                <td class="line_table">
+                                    <div class="line_flex">
+                                        0
+                                        <input oninput="changerStyle()" onchange="changerStyle()" type="range" min="0"
+                                            max="180" step="1" class="chiffre_choisi" value="0">
+                                        180
+                                    </div>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div data-target="test2" class="card_Boite" id="testTwoBoite">
+                <a href="./screen_idea_switchlogos_combi.jpg" target="_blank" rel="noopener noreferrer"><img
+                        class="img_dim" src="./screen_idea_switchlogos_combi.jpg" alt=""></a>
+                <div class="white_card" action="">
+                    <button type="submit" id="img_switch_test" onclick="launchChange()">Test du code:</button>
+                    <img src="11.jpg" width="300" height="400" id="switch" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="experimentBoite"></div>
+    </div>
+
+    <ul class="pagination center_page">
+        <li class="waves-effect"><a href="./boite_a_idees.html"><i class="material-icons">chevron_left</i></a></li>
+        <li class="waves-effect"><a href="./boite_a_idees.html">1</a></li>
+        <li class="active"><a href="./boite_a_idee_page2.html">2</a></li>
+        <li class="waves-effect"><a href="./boite_a_idee_page3.html">3</a></li>
+        <li class="waves-effect"><a href="./boite_a_idee_page3.html"><i class="material-icons">chevron_right</i></a>
+        </li>
+    </ul>
+    <!-- fin test -->
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./main.js"></script>
+    <script src="./main_boit.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,123 @@
+.container_pres{
+    width: 800px;
+    height: 500px;
+    transform: translate(350px,100px);
+    background:linear-gradient(to bottom,#556B2F,black);
+    border-top-left-radius:50px;
+    border-top-right-radius: 50px;
+}
+.container_modif{
+    width: 800px;
+    height: 750px;
+    transform: translate(350px,100px);
+    background:linear-gradient(to top,#556B2F,black);
+    display: block;
+}
+.img_ascii{
+    width: 29%;
+    height: 52%;
+    transform: translateY(-110px);
+    border-radius: 50%;
+}
+.white_font{
+    color: white;
+    transform: translate(30px,-150px);
+}
+.header_right{
+    display: flex;
+    justify-content: right; 
+    transform: translate(-45px,-220px);
+}
+.real_think{
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+.head_pages{
+    display: flex;
+    justify-content: space-around;
+    margin-left: -25px;
+    margin-right: 25px;
+    margin-top: 40px;
+
+}
+.backg_button{
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+}
+.img_ascii_tweet{
+    width: 90px;
+    height: 100px;
+    contain: size;
+    transform: translateY(-55px);
+    border-radius: 50%;
+    margin-left: 15px;
+}
+.white_font_art{
+    color: white;
+    width: 80%;
+    height: 100px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 10px;
+    background-color: rgb(70, 70, 70);
+    transform: translate(100px,-120px);
+    /* display: flex;
+    justify-content: right;
+    align-items: flex-end; */
+}
+.cont_head_arti{
+    display: flex;
+    color: white;
+    transform: translate(180px,-40px);
+    justify-content: space-between;
+    min-width: 20%;
+    max-width: 40%;
+}
+.img_verif_top_art{
+    background: no-repeat url("../verif_top_art.png");
+    width: 20px;
+}
+.cont_foot_arti{
+    display: flex;
+    color: white;
+    transform: translate(250px,-75px);
+    justify-content: space-between;
+    min-width: 20%;
+    max-width: 40%;
+}
+.img_retweet_bot_art{
+    background: no-repeat url("../retweet_bot_art.png");
+    width: 35px;
+    height: 35px;
+}
+.img_like_bot_art{
+    background: no-repeat url("../like_bot_art.png");
+    width: 35px;
+    height: 35px;
+}
+.img_share_top_art{
+    background: no-repeat url("../share_bot_art.png");
+    width: 35px;
+    height: 35px;
+}
+.constructor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+body{
+    background-image: linear-gradient(to bottom, rgba(0,0,0, 0.7), rgb(255, 255, 255)), url(./olivier.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed, local;  
+}
+.backg_button:hover{
+    transform: scale(1.2);
+    text-decoration: underline;
+    text-decoration-color: #556B2F;
+    text-decoration-thickness:7px;
+}
