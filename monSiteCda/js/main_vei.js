@@ -55,7 +55,7 @@ function siAttente() {
 }
 
 function appearCards() {
-  nonAction=setInterval(calculPosition, 30);
+  nonAction=setInterval(calculPosition, 10);
 }
 
 function calculPosition(){
