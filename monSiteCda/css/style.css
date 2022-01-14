@@ -2,7 +2,7 @@
 body{
     background-image: 
     linear-gradient(to bottom, rgba(0,0,0, 0.7), rgb(255, 255, 255)),
-    url(./olivier.png);
+    url(../img/olivier.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed, local;
@@ -82,7 +82,7 @@ html{
   justify-content: center;
   height: 100%;
   width: 30%;
-  background:center no-repeat url("./linkdin_button.png");
+  background:center no-repeat url("../img/linkdin_button.png");
 }
 .nav_card_twit{
   display: flex;
@@ -90,7 +90,7 @@ html{
   justify-content: center;
   height: 100%;
   width: 30%;
-  background:center no-repeat url("./github_button.png");
+  background:center no-repeat url("../img/github_button.png");
 }
 .nav_card_gitH{
   display: flex;
@@ -98,7 +98,7 @@ html{
   justify-content: center;
   height: 100%;
   width: 30%;
-  background:center no-repeat url("./warning_button.png");
+  background:center no-repeat url("../img/warning_button.png");
 }
 .nav_redirec_contact{
   display: flex;
@@ -152,19 +152,19 @@ html{
 
 .img_card_pres{
   background: linear-gradient(to top, rgb(8, 8, 8,.6), rgb(246, 241, 241,.2)),
-              center/contain no-repeat url("./screen_page_description.jpg");
+              center/contain no-repeat url("../img/screen_page_description.jpg");
 }
 .img_card_rea{
   background: linear-gradient(to top, rgb(8, 8, 8,.6), rgb(246, 241, 241,.2)),
-              center/contain no-repeat url("./screen_page_realisations.jpg");
+              center/contain no-repeat url("../img/screen_page_realisations.jpg");
 }
 .img_card_vei{
   background: linear-gradient(to top, rgb(8, 8, 8,.6), rgb(246, 241, 241,.2)),
-              center/contain no-repeat url("./screen_page_veille.jpg");
+              center/contain no-repeat url("../img/screen_page_veille.jpg");
 }
 .img_card_cont{
   background: linear-gradient(to top, rgb(8, 8, 8,.6), rgb(246, 241, 241,.2)),
-              center/contain no-repeat url("./screen_page_contact.jpg");
+              center/contain no-repeat url("../img/screen_page_contact.jpg");
 }
 .card_index{
   display: flex;
