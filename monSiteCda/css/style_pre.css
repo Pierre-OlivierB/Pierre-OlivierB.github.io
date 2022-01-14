@@ -63,6 +63,8 @@
     padding: 10px;
     background-color: rgb(70, 70, 70);
     transform: translate(100px,-120px);
+    padding: 6px;
+    line-height: 23px;
     /* display: flex;
     justify-content: right;
     align-items: flex-end; */
