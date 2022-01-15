@@ -53,9 +53,18 @@
                                 class="material-icons">arrow_drop_down</i></a>
                         <div class="collapsible-body">
                             <ul>
-                                <!-- <li><a href="article_15_01_22.html" class="background_collapse text_align_cent">GIT HUB en SOLO: Article
-                                    du 15/01/21</a></li> -->
-                                <li><a href="article_14_01_22.html" class="background_collapse text_align_cent">GIT: Article
+                                <li><a href="article5_15_01_22.html" class="background_collapse text_align_cent">GIT HUB
+                                        en MULTI: Conflits</a></li>
+                                <li><a href="article4_15_01_22.html" class="background_collapse text_align_cent">GIT HUB
+                                        en MULTI: Vérifications</a></li>
+                                <li><a href="article3_15_01_22.html" class="background_collapse text_align_cent">GIT HUB
+                                        en MULTI: Installation</a></li>
+                                <li><a href="article2_15_01_22.html" class="background_collapse text_align_cent">GIT HUB
+                                        en SOLO</a></li>
+                                <li><a href="article_15_01_22.html" class="background_collapse text_align_cent">GIT HUB
+                                        la plateforme</a></li>
+                                <li><a href="article_14_01_22.html" class="background_collapse text_align_cent">GIT:
+                                        Article
                                         du 14/01/21</a></li>
                                 <!-- <li><a href="#!">Second</a></li>
                                 <li><a href="#!">Third</a></li>
@@ -92,74 +101,82 @@
 
     <!-- fin test -->
     <div class="bones_container">
-    <article class="bones_article">
-        <h1 class="bones_title">Utilisation de Git</h1>
-        <h2 class="bones_title">Git</h2>
-        <h3>C'est quoi?</h3>
-        <span class="bones_title">
-            <p>Git, c'est du "versionning" d'un travail ciblé. Ce sont des copies faites avec un code donné, pour ciblé une version à cause d'un problème rencontré par exemple.</p>
-            <p>Pour la suite allez télécharger git sur <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">-->GIT<--</a>!</p>
-        </span>
-        <h3>Pas à pas pour utiliser git:</h3>
-        <span class="bones_title">
-            <p>1- clic droit dans le dossier cible : <br> Git bash here.</p>
-            <p>Ligne de commande:</p>
-            <p>2- git config –global user.name "Name"</p>
-            <p>3- git config –global –user.email "email.mail@mail.mel" </p>
-            <p>4- git init</p>
-            <p>5- git status <br>//: pour connaître le statu du travail</p>
-            <p>6- git add <br>//: ajoute un fichier à suivre (attention à "git add ." qui référence tout)</p>
-            <p>7- git status <br>//: pour vérifier les ajouts</p>
-            <p>8- git commit <br>//: commit le travail surveillé (sauvegarde local)</p>
-            <p>une page s'ouvre</p>
-            <p>{'git commit -m "ici c'est le commentaire" ' permet de mettre le commentaire}</p>
-            <p>9- ajouter :titre du commit + escp pour partir + ":wq" //: ":wq" permet de sauvegarder</p>
-            <p>10- git status <br>//: tout doit disparaître.</p>
-        </span>
+        <article class="bones_article">
+            <h1 class="bones_title">Utilisation de Git</h1>
+            <h2 class="bones_title">Git</h2>
+            <h3>C'est quoi?</h3>
+            <span class="bones_title">
+                <p>Git, c'est du "versionning" d'un travail ciblé. Ce sont des copies faites avec un code donné, pour
+                    ciblé une version à cause d'un problème rencontré par exemple.</p>
+                <p>Pour la suite allez télécharger git sur <a href="https://git-scm.com/" target="_blank"
+                        rel="noopener noreferrer">-->GIT<-- </a>!</p>
+            </span>
+            <h3>Pas à pas pour utiliser git:</h3>
+            <span class="bones_title">
+                <p>1- clic droit dans le dossier cible : <br> Git bash here.</p>
+                <p>Ligne de commande:</p>
+                <p>2- git config –global user.name "Name"</p>
+                <p>3- git config –global –user.email "email.mail@mail.mel" </p>
+                <p>4- git init</p>
+                <p>5- git status <br>//: pour connaître le statu du travail</p>
+                <p>6- git add <br>//: ajoute un fichier à suivre (attention à "git add ." qui référence tout)</p>
+                <p>7- git status <br>//: pour vérifier les ajouts</p>
+                <p>8- git commit <br>//: commit le travail surveillé (sauvegarde local)</p>
+                <p>une page s'ouvre</p>
+                <p>{'git commit -m "ici c'est le commentaire" ' permet de mettre le commentaire}</p>
+                <p>9- ajouter :titre du commit + escp pour partir + ":wq" //: ":wq" permet de sauvegarder</p>
+                <p>10- git status <br>//: tout doit disparaître.</p>
+            </span>
 
-        <h3>Conflits!!</h4>
-            <h4>Deuxième possibilité: Branche</h4>
-            <span class="bones_title">
-                <p>A- git branch v2.0</p>
-                <p>A1- git status <br>//: on est toujours sur la branche master</p>
-                <p>A2- git checkout v2.0 <br>//: s'aligner sur la branche ici v2.0</p>
-                <p>A3- git checkout v2.0 -b v2.1 <br>//raccourci qui permet de créer un new branch et de s'y aligner</p>
-                <p>A4- git checkout master</p>
-                <p>si il y a eu des commit ou du travail fait sur cette nouvelle version et qu'on vont push cette branch
-                    sur git hub:</p>
-                <p>A5- git push origin v2.0 <br>//: c'est une push de la branche v2.0 sur la branch origin => une nouvelle
-                    branche se créé sur le distant (voir git hub)</p>
-                <p>A6- apparition d'un page pour le code si vous n'avez pas enregistrer votre code.</p>
-            </span>
-            <h4>Fusion branche:</h4>
-            <span class="bones_title">
-                <p>en position master:</p>
-                <p>AA1- git merge 2.0 <br>//: la branche master a les modifs du 2.0 (les deux entités sont quand même
-                    séparé)</p>
-                <p>AA2- git tag -a 2.0 -m "Mise en production blablabla" master <br>//:ici un tage est mis sur la branche
-                    master pour indiquer le merge de la v2.0 sur la version master. </p>
-                <p>!!!!ne pas utiliser le même nom que la branche si non confusion pour git</p>
-                <p>AA3- git push origin master --tags</p>
-                <p>Il faut penser à push les tags également , push tags seul ne marche pas.</p>
-                <p>Ajouté à l'onglet release sur git hub</p>
-            </span>
-    </article> 
-    <article class="bones_article more_bones">
-        <h3 class="bones_title">Pour aller plus loin : Travail en équipe!</h3>
+            <h3>Conflits!!</h4>
+                <h4>Deuxième possibilité: Branche</h4>
+                <span class="bones_title">
+                    <p>A- git branch v2.0</p>
+                    <p>A1- git status <br>//: on est toujours sur la branche master</p>
+                    <p>A2- git checkout v2.0 <br>//: s'aligner sur la branche ici v2.0</p>
+                    <p>A3- git checkout v2.0 -b v2.1 <br>//raccourci qui permet de créer un new branch et de s'y aligner
+                    </p>
+                    <p>A4- git checkout master</p>
+                    <p>si il y a eu des commit ou du travail fait sur cette nouvelle version et qu'on vont push cette
+                        branch
+                        sur git hub:</p>
+                    <p>A5- git push origin v2.0 <br>//: c'est une push de la branche v2.0 sur la branch origin => une
+                        nouvelle
+                        branche se créé sur le distant (voir git hub)</p>
+                    <p>A6- apparition d'un page pour le code si vous n'avez pas enregistrer votre code.</p>
+                </span>
+                <h4>Fusion branche:</h4>
+                <span class="bones_title">
+                    <p>en position master:</p>
+                    <p>AA1- git merge 2.0 <br>//: la branche master a les modifs du 2.0 (les deux entités sont quand
+                        même
+                        séparé)</p>
+                    <p>AA2- git tag -a 2.0 -m "Mise en production blablabla" master <br>//:ici un tage est mis sur la
+                        branche
+                        master pour indiquer le merge de la v2.0 sur la version master. </p>
+                    <p>!!!!ne pas utiliser le même nom que la branche si non confusion pour git</p>
+                    <p>AA3- git push origin master --tags</p>
+                    <p>Il faut penser à push les tags également , push tags seul ne marche pas.</p>
+                    <p>Ajouté à l'onglet release sur git hub</p>
+                </span>
+        </article>
+        <article class="bones_article more_bones">
+            <h3 class="bones_title">Pour aller plus loin : Travail en équipe!</h3>
             <span class="bones_title">
                 <p>1- git log <br>\\ montre les commits effectués</p>
                 <p>2- git log -n2 <br>\\ montre les deux derniers commit</p>
-                <p> 3- git show sha-1 <br>\\le sha-1 (dit chat one) donne le code de la version du commit, il est long</p>
+                <p> 3- git show sha-1 <br>\\le sha-1 (dit chat one) donne le code de la version du commit, il est long
+                </p>
                 <p>4- git checkout sha-1 <br>\\selectionne la version désiré et change la version actuel du travail.
                     Attention nou ne serons alors plus sur la branche Master! Pour y retourner =></p>
                 <p>5- git checkout master <br>\\ c'est la version head, la dernière version produite!</p>
             </span>
             <p></p>
-        <!-- <h2 class="bones_title">GitHub</h2>
+            <!-- <h2 class="bones_title">GitHub</h2>
         <h3 class="bones_title">On ne vient pas de le voir juste avant?</h3>
  -->
 
-    </article>
+        </article>
     </div>
 
     <!-- Compiled and minified JavaScript -->

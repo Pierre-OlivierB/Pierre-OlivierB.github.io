@@ -53,14 +53,18 @@
                                 class="material-icons">arrow_drop_down</i></a>
                         <div class="collapsible-body">
                             <ul>
-                                <!-- <li><a href="article5_15_01_22.html" class="background_collapse text_align_cent">GIT HUB en MULTI: Partie 3/3</a></li>
-                                <li><a href="article4_15_01_22.html" class="background_collapse text_align_cent">GIT HUB en MULTI: Partie 2/3</a></li>
-                                <li><a href="article3_15_01_22.html" class="background_collapse text_align_cent">GIT HUB en MULTI: Partie 1/3</a></li>
-                                <li><a href="article2_15_01_22.html" class="background_collapse text_align_cent">GIT HUB en SOLO: Article
-                                    du 15/01/21</a></li> -->
-                                <li><a href="article_15_01_22.html" class="background_collapse text_align_cent">GIT HUB la plateforme: Article
-                                    du 15/01/21</a></li>
-                                <li><a href="article_14_01_22.html" class="background_collapse text_align_cent">GIT: Article
+                                <li><a href="article5_15_01_22.html" class="background_collapse text_align_cent">GIT HUB
+                                        en MULTI: Conflits</a></li>
+                                <li><a href="article4_15_01_22.html" class="background_collapse text_align_cent">GIT HUB
+                                        en MULTI: Vérifications</a></li>
+                                <li><a href="article3_15_01_22.html" class="background_collapse text_align_cent">GIT HUB
+                                        en MULTI: Installation</a></li>
+                                <li><a href="article2_15_01_22.html" class="background_collapse text_align_cent">GIT HUB
+                                        en SOLO</a></li>
+                                <li><a href="article_15_01_22.html" class="background_collapse text_align_cent">GIT HUB
+                                        la plateforme</a></li>
+                                <li><a href="article_14_01_22.html" class="background_collapse text_align_cent">GIT:
+                                        Article
                                         du 14/01/21</a></li>
                                 <!-- <li><a href="#!">Second</a></li>
                                 <li><a href="#!">Third</a></li>
@@ -97,40 +101,51 @@
 
     <!-- fin test -->
     <div class="bones_container">
-    <article class="bones_article">
-        <h1 class="bones_title">Utilisation de GitHub</h1>
-        <h2 class="bones_title">GitHub en SOLO</h2>
-        <h3>Marche à suivre</h3>
-        <span class="bones_title">
-            <p>Après avoir créée son dossier sur git hub. Nous prenons(copier) le lien donné dans la quick installation.</p>
-            <p>Click droit :GitBashHere sur le poste de travail par exemple.</p>
-        </span>
-        <h3>Dans l'onglet qui s'ouvre :</h3>
-        <span class="bones_title">
-        <p>1- $ git clone https://github.com/... <br>\\ cela créé un dossier vide qui provient git hub, sauf si on y a déjà mis quelque chose!!!
-            Si on a un travail déjà fait qu'on voudrait mettre dans ce dossier alors créée:</p>
-        <p>2- Glissé déposé dans le nouveau dossier.<br>
-            Attention nous somme toujours sur le poste de travail! Il nous faut donc aller sur:</p>
-        
-        <p>3-$ cd nomDuFichierGithub/ <br>\\ on est bien sur la branche master</p>
-        <p>4-$ git add . <br> \\ on ajoute tout ce qui a dans le dossier (merci à la black liste, si non tout est ajouté)</p>
-        <p>5-$ git status</p>
-        <p>Maintenant on envoit notre travail sur le serveur (GitHub)</p>
-        <p>6-$ git commit -m "Premier envoi" <br>\\le commit ne travail qu'en local il nous faut donc une autre manip en plus!</p>
-        <p>7-$ git push -u origin main <br>\\ça nous ouvre un onglet (sauf si on a enregistrer notre mdp sur GitHub). </p>
-        <p>Pourquoi cette démarche? <br> Nous essayons d'envoyer des fichiers sur un serveur, la protection veut qu'il sache qui nous sommes. Avant d'ouvrir la porte nous demandons :"Qui c'est?", après avoir rentré notre code c'est comme si on lui répondait :"C'est moi!" la réponse qui à toujours du sens.</p>
-        <p>Pendant cet apparté nous voyons des écritures s'afficher sur l'onglet de commands. Il affiche plein de détails et finit par nous redonner la possibilité d'écrire des commandes.</p>
-        </span>
-        <h3>Allons sur GitHub pour voir ce qui s'est passé:</h3>
-        <span class="bones_title">
-            <p>Après un F5 de la page <>Code, on se retrouve avec nos fichiers push (précision nous sommes sur la branche master, affiché en haut à gauche, en dessous de l'onglet <>Code).</p>
-            <p>A gauche le nom du fichier</p>
-            <p>Au centre le commentaire du push</p>
-            <p>A droite le timecode du commit effectué</p>
-            <p>D'autres informations s'affichent sur la droite About, Releases, Packages, Languages qui peuvent avoir leur importances. Tout dépend de ce qu'on cherche.</p>
-        </span>  
-    </article> 
-    <!-- <article class="bones_article more_bones">
+        <article class="bones_article">
+            <h1 class="bones_title">Utilisation de GitHub</h1>
+            <h2 class="bones_title">GitHub en SOLO</h2>
+            <h3>Marche à suivre</h3>
+            <span class="bones_title">
+                <p>Après avoir créée son dossier sur git hub. Nous prenons(copier) le lien donné dans la quick
+                    installation.</p>
+                <p>Click droit :GitBashHere sur le poste de travail par exemple.</p>
+            </span>
+            <h3>Dans l'onglet qui s'ouvre :</h3>
+            <span class="bones_title">
+                <p>1- $ git clone https://github.com/... <br>\\ cela créé un dossier vide qui provient git hub, sauf si
+                    on y a déjà mis quelque chose!!!
+                    Si on a un travail déjà fait qu'on voudrait mettre dans ce dossier alors créée:</p>
+                <p>2- Glissé déposé dans le nouveau dossier.<br>
+                    Attention nous somme toujours sur le poste de travail! Il nous faut donc aller sur:</p>
+
+                <p>3-$ cd nomDuFichierGithub/ <br>\\ on est bien sur la branche master</p>
+                <p>4-$ git add . <br> \\ on ajoute tout ce qui a dans le dossier (merci à la black liste, si non tout
+                    est ajouté)</p>
+                <p>5-$ git status</p>
+                <p>Maintenant on envoit notre travail sur le serveur (GitHub)</p>
+                <p>6-$ git commit -m "Premier envoi" <br>\\le commit ne travail qu'en local il nous faut donc une autre
+                    manip en plus!</p>
+                <p>7-$ git push -u origin main <br>\\ça nous ouvre un onglet (sauf si on a enregistrer notre mdp sur
+                    GitHub). </p>
+                <p>Pourquoi cette démarche? <br> Nous essayons d'envoyer des fichiers sur un serveur, la protection veut
+                    qu'il sache qui nous sommes. Avant d'ouvrir la porte nous demandons :"Qui c'est?", après avoir
+                    rentré notre code c'est comme si on lui répondait :"C'est moi!" la réponse qui à toujours du sens.
+                </p>
+                <p>Pendant cet apparté nous voyons des écritures s'afficher sur l'onglet de commands. Il affiche plein
+                    de détails et finit par nous redonner la possibilité d'écrire des commandes.</p>
+            </span>
+            <h3>Allons sur GitHub pour voir ce qui s'est passé:</h3>
+            <span class="bones_title">
+                <p>Après un F5 de la page <>Code, on se retrouve avec nos fichiers push (précision nous sommes sur la
+                        branche master, affiché en haut à gauche, en dessous de l'onglet <>Code).</p>
+                <p>A gauche le nom du fichier</p>
+                <p>Au centre le commentaire du push</p>
+                <p>A droite le timecode du commit effectué</p>
+                <p>D'autres informations s'affichent sur la droite About, Releases, Packages, Languages qui peuvent
+                    avoir leur importances. Tout dépend de ce qu'on cherche.</p>
+            </span>
+        </article>
+        <!-- <article class="bones_article more_bones">
         <h3 class="bones_title">Pour aller plus loin : Travail en équipe!</h3>
             <span class="bones_title">
                 <p>1- git log <br>\\ montre les commits effectués</p>
@@ -145,7 +160,7 @@
         <h3 class="bones_title">On ne vient pas de le voir juste avant?</h3>
  -->
 
-    <!-- </article> -->
+        <!-- </article> -->
     </div>
 
     <!-- Compiled and minified JavaScript -->
