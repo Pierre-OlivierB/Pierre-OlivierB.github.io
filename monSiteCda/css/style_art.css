@@ -12,8 +12,10 @@
 } */
 .bones_title{
     border: 1px solid black;
-    background: linear-gradient(to top, rgb(8, 8, 8,.6), rgb(246, 241, 241,.2));
+    background: linear-gradient(to top, rgb(8, 8, 8,.8), rgb(246, 241, 241,.2));
     color: white;
+    text-align: center;
+    margin-left: 7%;
 }
 .bones_article{
     border: 1px solid black;
@@ -25,10 +27,15 @@
     width:80%;
     transform: translateX(20%);
     justify-content: center;
+    background: linear-gradient(to top, rgb(8, 8, 8,.6), rgb(246, 241, 241,.2));
 }
 .bones_container{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 101%;
+}
+.more_bones{
+    border: 5px double black;
+    background: linear-gradient(to left, rgb(8, 8, 8,.6), rgb(246, 241, 241,.2));
 }
