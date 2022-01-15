@@ -18,7 +18,7 @@
     <header>
         <nav id="top_nav" class="black">
             <a href="../index.html" class="web_title">Bienvenue sur mon site CDA</a>
-            <div class="page_title">GIT HUB en MULTI: Partie 3/3</div>
+            <div class="page_title">GIT HUB en MULTI: Partie 3 conflits</div>
             <div class="three_right_buttons">
                 <div class="nav_card_link"><a href="https://www.linkedin.com/in/pierre-olivier-baudino-5a49511a3/"
                         class="nav_redirec_contact" target="_blank"></a></div>
@@ -53,14 +53,20 @@
                                 class="material-icons">arrow_drop_down</i></a>
                         <div class="collapsible-body">
                             <ul>
-                                <li><a href="article5_15_01_22.html" class="background_collapse text_align_cent">GIT HUB en MULTI: Partie 3/3</a></li>
-                                <li><a href="article4_15_01_22.html" class="background_collapse text_align_cent">GIT HUB en MULTI: Partie 2/3</a></li>
-                                <li><a href="article3_15_01_22.html" class="background_collapse text_align_cent">GIT HUB en MULTI: Partie 1/3</a></li>
-                                <li><a href="article2_15_01_22.html" class="background_collapse text_align_cent">GIT HUB en SOLO: Article
-                                    du 15/01/21</a></li>
-                                <li><a href="article_15_01_22.html" class="background_collapse text_align_cent">GIT HUB la plateforme: Article
-                                    du 15/01/21</a></li>
-                                <li><a href="article_14_01_22.html" class="background_collapse text_align_cent">GIT: Article
+                                <li><a href="article5_15_01_22.html" class="background_collapse text_align_cent">GIT HUB
+                                        en MULTI: Partie 3/3</a></li>
+                                <li><a href="article4_15_01_22.html" class="background_collapse text_align_cent">GIT HUB
+                                        en MULTI: Partie 2/3</a></li>
+                                <li><a href="article3_15_01_22.html" class="background_collapse text_align_cent">GIT HUB
+                                        en MULTI: Partie 1/3</a></li>
+                                <li><a href="article2_15_01_22.html" class="background_collapse text_align_cent">GIT HUB
+                                        en SOLO: Article
+                                        du 15/01/21</a></li>
+                                <li><a href="article_15_01_22.html" class="background_collapse text_align_cent">GIT HUB
+                                        la plateforme: Article
+                                        du 15/01/21</a></li>
+                                <li><a href="article_14_01_22.html" class="background_collapse text_align_cent">GIT:
+                                        Article
                                         du 14/01/21</a></li>
                                 <!-- <li><a href="#!">Second</a></li>
                                 <li><a href="#!">Third</a></li>
@@ -97,40 +103,52 @@
 
     <!-- fin test -->
     <div class="bones_container">
-    <article class="bones_article">
-        <h1 class="bones_title">Utilisation de GitHub</h1>
-        <h2 class="bones_title">GitHub en SOLO</h2>
-        <h3>Marche à suivre</h3>
-        <span class="bones_title">
-            <p>Après avoir créée son dossier sur git hub. Nous prenons(copier) le lien donné dans la quick installation.</p>
-            <p>Click droit :GitBashHere sur le poste de travail par exemple.</p>
-        </span>
-        <h3>Dans l'onglet qui s'ouvre :</h3>
-        <span class="bones_title">
-        <p>1- $ git clone https://github.com/... <br>\\ cela créé un dossier vide qui provient git hub, sauf si on y a déjà mis quelque chose!!!
-            Si on a un travail déjà fait qu'on voudrait mettre dans ce dossier alors créée:</p>
-        <p>2- Glissé déposé dans le nouveau dossier.<br>
-            Attention nous somme toujours sur le poste de travail! Il nous faut donc aller sur:</p>
-        
-        <p>3-$ cd nomDuFichierGithub/ <br>\\ on est bien sur la branche master</p>
-        <p>4-$ git add . <br> \\ on ajoute tout ce qui a dans le dossier (merci à la black liste, si non tout est ajouté)</p>
-        <p>5-$ git status</p>
-        <p>Maintenant on envoit notre travail sur le serveur (GitHub)</p>
-        <p>6-$ git commit -m "Premier envoi" <br>\\le commit ne travail qu'en local il nous faut donc une autre manip en plus!</p>
-        <p>7-$ git push -u origin main <br>\\ça nous ouvre un onglet (sauf si on a enregistrer notre mdp sur GitHub). </p>
-        <p>Pourquoi cette démarche? <br> Nous essayons d'envoyer des fichiers sur un serveur, la protection veut qu'il sache qui nous sommes. Avant d'ouvrir la porte nous demandons :"Qui c'est?", après avoir rentré notre code c'est comme si on lui répondait :"C'est moi!" la réponse qui à toujours du sens.</p>
-        <p>Pendant cet apparté nous voyons des écritures s'afficher sur l'onglet de commands. Il affiche plein de détails et finit par nous redonner la possibilité d'écrire des commandes.</p>
-        </span>
-        <h3>Allons sur GitHub pour voir ce qui s'est passé:</h3>
-        <span class="bones_title">
-            <p>Après un F5 de la page <>Code, on se retrouve avec nos fichiers push (précision nous sommes sur la branche master, affiché en haut à gauche, en dessous de l'onglet <>Code).</p>
-            <p>A gauche le nom du fichier</p>
-            <p>Au centre le commentaire du push</p>
-            <p>A droite le timecode du commit effectué</p>
-            <p>D'autres informations s'affichent sur la droite About, Releases, Packages, Languages qui peuvent avoir leur importances. Tout dépend de ce qu'on cherche.</p>
-        </span>  
-    </article> 
-    <!-- <article class="bones_article more_bones">
+        <article class="bones_article">
+            <h1 class="bones_title">Utilisation de GitHub en MULTI</h1>
+            <h2 class="bones_title">Travailler sur la branche</h2>
+            <h3>Marche à suivre</h3>
+            <span class="bones_title">
+                <p>Toujours penser aux vérifications avant de faire quoi que ce soit!</p>
+                <p>Récap.: add . + commit -m "" +</p>
+                <p>1- $git push -u origin nomDeLaBranche</p>
+            </span>
+            <h3>Fusionner :</h3>
+            <span class="bones_title">
+                <h4>Sur notre PC:</h4>
+                <p>2- $git merge nomDeLaBranche (fusion de la branche avec le main)</p>
+                <h4>Sur GitHub: (recommandé)</h4>
+                <p>2 (bis)- Sur le dossier du travail en dessous de la barre de navigation où se trouve <>Code on trouve
+                        le décompte des branches "1 branch" avec un petit arbre devant. On clique dessus.</p>
+                <p>3- Cela nous dirige vers une page où toutes nos branches son affichées. Sur chacune, à part sur le
+                    main évidemment, apparaît un bouton :
+                    "New pull request"</p>
+                <p>4- On arrive sur une page ou les différences des fichiers apparaissent.
+                    Rouge (avant), Vert (nouveau);</p>
+                <p>5- On peut écrire un commentaire.</p>
+                <p>6- Après vérifications: <br> Create pull request (bouton vert en bas à droite des commentaires écrits)</p>
+            </span>
+            <h3>Si conflits:</h3>
+            <span class="bones_title">
+                <p>7- Le déroulé de la création s'affiche, et un conflit également!</p>
+                <p>8- On clique sur <br> Resolve conflicts à droite dans l'onglet de l'erreur.</p>
+                <p>9- Une nouvelle page s'ouvre, dévoilant notre code en texte, avec les erreurs encadrées de Jaune
+                    reliées d'une ligne Rouge</p>
+                <p>10- On supprime à la main sur cette interface ce qui ne nous convient pas.</p>
+                <p>11- En haut à droite, <br> APRES <br> avoir résolu le.s conflit.s, on clique sur :</p>
+                <p>Mark as resolved</p>
+                <p>12- Une encoche verte apparaît alors sur la droite de notre fichier.</p>
+                <p>13- D'aurtes arbitrages à FAIRE peuvent apparaître sur la gauche de la pages.</p>
+                <p>14- Après avoir tout résolu, <br> en haut à droite sur un bouton vert : </p>
+                <p>Commit merge</p>
+                <p>15- Cette fois les conflits sont résoluts, sur notre historique. <br> La validation est faite. <br> Il ne nous
+                    reste qu'à appuyer sur le bouton vert en bas à gauche de l'onglet où est écrit <br> "This branch has no
+                    conflicts with the base branch":</p>
+                <p>Merge pull request</p>
+                <p>16- Confirm merge (bouton vert)!</p>
+                <p>17- Pull request successfully merged and closed. (en violet)</p>
+            </span>
+        </article>
+        <!-- <article class="bones_article more_bones">
         <h3 class="bones_title">Pour aller plus loin : Travail en équipe!</h3>
             <span class="bones_title">
                 <p>1- git log <br>\\ montre les commits effectués</p>
@@ -145,7 +163,7 @@
         <h3 class="bones_title">On ne vient pas de le voir juste avant?</h3>
  -->
 
-    <!-- </article> -->
+        <!-- </article> -->
     </div>
 
     <!-- Compiled and minified JavaScript -->
