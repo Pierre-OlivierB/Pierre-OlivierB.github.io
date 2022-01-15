@@ -2,7 +2,7 @@
     background-color: #556B2F;
 }
 .page_title{
-    width: 15%;
+    width: 16%;
   }
 /* .bones_article{
     display: flex;
@@ -33,7 +33,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 101%;
+    height: 80%;
 }
 .more_bones{
     border: 5px double black;
