@@ -17,19 +17,27 @@ article{
     flex-direction: column;
     align-items: center;
     background: 
-    linear-gradient(to top,#556B2F,#808000);
+    linear-gradient(to top, rgb(8, 8, 8,.8), rgb(246, 241, 241,.2));
+    /* linear-gradient(to top,#556B2F,#808000); */
     border: 1px solid black;
     text-align: center;
+    color: white;
 }
 .title_warning{
     text-align: center;
-    height: 13rem;
-    background: 
-    linear-gradient(to bottom,#556B2F,#808000);
+    height: 6rem;
+    background:
+    linear-gradient(to top, rgb(8, 8, 8,.8), rgb(246, 241, 241,.2));
+    /* linear-gradient(to bottom,#556B2F,#808000); */
+    color: white;
+   border: 1px solid black;
+}
+.title_warning_twit{
+    height: 3rem;
 }
 .link_warning{
-    color: blue;
-    border: 1px double blue;
+    color: green;
+    border: 1px double green;
 } 
 
 /* .subtitle_warning{
