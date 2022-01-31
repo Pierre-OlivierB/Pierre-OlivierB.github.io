@@ -148,7 +148,9 @@ body{
         height: auto
     }
     .img_ascii{
-        height: 35%;
+        width: 150px;
+        height: 170px;
+        transform: translateY(-80px);
     }
     .cont_head_arti{
         max-width: 60%;
@@ -158,6 +160,9 @@ body{
     .cont_foot_arti{
         transform: translate(150px,-90px);
     }
+    .header_right {
+        transform: translate(-45px,-200px);
+      }
 }
 @media screen and (max-width:600px) {
     .container_pres{
@@ -168,5 +173,11 @@ body{
         transform: translate(30px,120px);
         width: 100%;
     }
+    .header_right{
+        display: none;
+    }
+    .white_font {
+        transform: translate(30px,-50px);
+      }
     
 }

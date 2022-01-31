@@ -177,12 +177,15 @@ html{
 .background_collapse{
   background-color: #556B2F;
 }
-.test{
-  transform: translateY(50px);
-}
-@media screen and (max-width: 600px) {
+/* .test{
+  transform: translateY(-50px);
+} */
+@media screen and (max-width: 1000px) {
   .web_title{
     display: none;
+  }
+  .nav_position {
+    margin-top: 0px;
   }
 }
   /* test */
