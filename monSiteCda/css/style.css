@@ -21,7 +21,7 @@ body{
   justify-content: center;
   align-items: center;
   transform: translateY(15px);  
-  min-width:80px;
+  min-width:85px;
 }
 
 html{
