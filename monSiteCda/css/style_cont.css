@@ -53,3 +53,30 @@
 .padding_cont{
     padding: 1%;
 }
+@media screen and (max-width:1000px) {
+    .contact_cont {
+        width: 80%;
+        height: 600px;
+        transform: translate(50px,60px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .card_contact {
+        height: 200px;
+    }
+    .contact_cont {
+        height: 700px;
+    }
+    .card_desc_profil {
+        overflow: scroll;
+        height: 100%;
+    }
+    .padding_cont {
+        padding-left: 1%;
+    }
+    .title_profil{
+        transform: translateY(30px);
+    }   
+    
+}
