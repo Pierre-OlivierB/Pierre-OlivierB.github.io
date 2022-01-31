@@ -4,6 +4,8 @@ let buttonLang = document.querySelector("#language");
 let buttonMed = document.querySelector("#medium");
 let buttonLove = document.querySelector("#i_like");
 let test = true;
+let gpButton = document.querySelector(".backg_button");
+const tableButton=["buttonDesc","buttonLang","buttonMed","buttonLove"];
 
 // creation of 1rst articles
 let articleOne = document.createElement("article");
@@ -24,17 +26,17 @@ let contFootArtiThree = document.createElement("div");
 let imgVerifToArt = document.createElement("li");
 imgVerifToArt.classList.add("img_verif_top_art");
 let timeArtCreation = document.createElement("li");
-timeArtCreation.textContent="@Montpellier . 1sept";
+timeArtCreation.textContent = "@Montpellier . 1sept";
 // top of 2sd articles
 let imgVerifToArtTwo = document.createElement("li");
 imgVerifToArtTwo.classList.add("img_verif_top_art");
 let timeArtCreationTwo = document.createElement("li");
-timeArtCreationTwo.textContent="@Montpellier . 1sept";
+timeArtCreationTwo.textContent = "@Montpellier . 1sept";
 // top of 3thd articles
 let imgVerifToArtThree = document.createElement("li");
 imgVerifToArtThree.classList.add("img_verif_top_art");
 let timeArtCreationThree = document.createElement("li");
-timeArtCreationThree.textContent="@Montpellier . 1sept";
+timeArtCreationThree.textContent = "@Montpellier . 1sept";
 // top of desciption 1rst articles
 let whoIAm = document.createElement("li");
 // top of desciption 2sd articles
@@ -42,29 +44,30 @@ let whoIAmTwo = document.createElement("li");
 // top of desciption 3thrd articles
 let whoIAmThree = document.createElement("li");
 // bottom of 1rst articles
-let imgReTweet=document.createElement("li");
+let imgReTweet = document.createElement("li");
 imgReTweet.classList.add("img_retweet_bot_art");
-let imgLike=document.createElement("li");
+let imgLike = document.createElement("li");
 imgLike.classList.add("img_like_bot_art");
-let imgShare=document.createElement("li");
+let imgShare = document.createElement("li");
 imgShare.classList.add("img_share_top_art");
 // bottom of 2sd articles
-let imgReTweetTwo=document.createElement("li");
+let imgReTweetTwo = document.createElement("li");
 imgReTweetTwo.classList.add("img_retweet_bot_art");
-let imgLikeTwo=document.createElement("li");
+let imgLikeTwo = document.createElement("li");
 imgLikeTwo.classList.add("img_like_bot_art");
-let imgShareTwo=document.createElement("li");
+let imgShareTwo = document.createElement("li");
 imgShareTwo.classList.add("img_share_top_art");
 // bottom of 3thrd articles
-let imgReTweetThree=document.createElement("li");
+let imgReTweetThree = document.createElement("li");
 imgReTweetThree.classList.add("img_retweet_bot_art");
-let imgLikeThree=document.createElement("li");
+let imgLikeThree = document.createElement("li");
 imgLikeThree.classList.add("img_like_bot_art");
-let imgShareThree=document.createElement("li");
+let imgShareThree = document.createElement("li");
 imgShareThree.classList.add("img_share_top_art");
 
 //chargement de la première page au chargement de la page
-window.onload=createDescPage();
+window.onload = createDescPage();
+buttonDesc.classList.add("active_button")
 // Descriptions part
 buttonDesc.addEventListener("click", (e) => {
     event.preventDefault();
@@ -72,15 +75,25 @@ buttonDesc.addEventListener("click", (e) => {
         // faire un tableau/ou un for childNodes.lenght de n nodes pour toutes les supprimer?
         while (tweetOne.firstChild) {
             tweetOne.removeChild(tweetOne.lastChild);
-          }
+        }
         createDescPage(e);
+        buttonLang.classList.remove("active_button");
+        buttonMed.classList.remove("active_button");
+        buttonLove.classList.remove("active_button");
+        buttonDesc.classList.add("active_button");
     }
     else {
         createDescPage(e);
+        delClass();
+        buttonLang.classList.remove("active_button");
+        buttonMed.classList.remove("active_button");
+        buttonLove.classList.remove("active_button");
+        buttonDesc.classList.add("active_button");
     }
 
 
 })
+
 
 function createDescPage() {
     createFirstDesc();
@@ -151,10 +164,10 @@ function createThird() {
 // creation 1srt article
 function createFirstDesc() {
     articleOne.textContent = "De 2018 à 2021 j'étais Surveillant de l'étude à l'Ecole Perceval (Primaire, Collège, Lycée) dans la ville de Chatou.";
-    articleOne.textContent+=" Le coeur de mes actions tournait autour de la gestion de salle d'étude, le suivi des élèves et de leur carnets, les réunions avec les parents et biensur la participation aux événements de l'école."; 
+    articleOne.textContent += " Le coeur de mes actions tournait autour de la gestion de salle d'étude, le suivi des élèves et de leur carnets, les réunions avec les parents et biensur la participation aux événements de l'école.";
     whoIAm.textContent = "Qui je suis?";
     createFirst();
-    test=false;
+    test = false;
 }
 // creation 2sd article
 function createSecDesc() {
@@ -162,14 +175,14 @@ function createSecDesc() {
     articleTwo.textContent += " Mes actions tournaient autour du suivi des appels, de l'accompagnement des élèves et de la surveillance d'examens."
     whoIAmTwo.textContent = "Qui je suis?";
     createSecond();
-    test=false;
+    test = false;
 }
 // creation 3td article
 function createThiDesc() {
     articleThree.textContent = "Pêle-mêle j'ai aussi été Equipier McDonald’s de Montpellier et de Vannes, ainsi que Tuteur de 1ère année à l’Université de Montpellier 3  et Surveillant de partiels à l’Ecole Supérieur d’Architecture de Montpellier à d'autres occasions."
     whoIAmThree.textContent = "Qui je suis?";
     createThird();
-    test=false;
+    test = false;
 }
 
 // langages utilisés part
@@ -178,11 +191,19 @@ buttonLang.addEventListener("click", () => {
     if (test === false) {
         while (tweetOne.firstChild) {
             tweetOne.removeChild(tweetOne.lastChild);
-          }
+        }
         createLangPage();
+        buttonLang.classList.add("active_button");
+        buttonMed.classList.remove("active_button");
+        buttonLove.classList.remove("active_button");
+        buttonDesc.classList.remove("active_button");
     }
     else {
         createLangPage();
+        buttonLang.classList.add("active_button");
+        buttonMed.classList.remove("active_button");
+        buttonLove.classList.remove("active_button");
+        buttonDesc.classList.remove("active_button");
     }
 
 
@@ -191,14 +212,14 @@ function createLangPage() {
     createFirstLang();
     createSecLang();
     createThiLang();
-    test=false;
+    test = false;
 }
 // 1rst article
 function createFirstLang() {
     articleOne.textContent = "Les Langages que je pratique sont: Html, Css, JS, Java!"
     whoIAm.textContent = "Langages";
     createFirst();
-   
+
 }
 // 2sd article 
 function createSecLang() {
@@ -218,11 +239,19 @@ buttonMed.addEventListener("click", () => {
     if (test === false) {
         while (tweetOne.firstChild) {
             tweetOne.removeChild(tweetOne.lastChild);
-          }
+        }
         createMedPage();
+        buttonMed.classList.add("active_button");
+        buttonLang.classList.remove("active_button");
+        buttonLove.classList.remove("active_button");
+        buttonDesc.classList.remove("active_button");
     }
     else {
         createMedPage();
+        buttonMed.classList.add("active_button");
+        buttonLang.classList.remove("active_button");
+        buttonLove.classList.remove("active_button");
+        buttonDesc.classList.remove("active_button");
     }
 
 
@@ -231,7 +260,7 @@ function createMedPage() {
     createFirstMed();
     createSecMed();
     createThiMed();
-    test=false;
+    test = false;
 }
 function createFirstMed() {
     articleOne.textContent = "Voici ma dernière formation elle a débuté en Septembre 2021 et elle continue jusqu'en Juin 2022. Elle amène au titre professionnel de Concepteur Développeur D'Applications (CDA) et cela grâce au GRETA Montpellier."
@@ -254,11 +283,19 @@ buttonLove.addEventListener("click", () => {
     if (test === false) {
         while (tweetOne.firstChild) {
             tweetOne.removeChild(tweetOne.lastChild);
-          }
+        }
         createLovePage();
+        buttonLove.classList.add("active_button");
+        buttonMed.classList.remove("active_button");
+        buttonLang.classList.remove("active_button");
+        buttonDesc.classList.remove("active_button");
     }
     else {
         createLovePage();
+        buttonLove.classList.add("active_button");
+        buttonMed.classList.remove("active_button");
+        buttonLang.classList.remove("active_button");
+        buttonDesc.classList.remove("active_button");
     }
 
 
@@ -268,7 +305,7 @@ function createLovePage() {
     createSecLove();
     createThiLove();
 
-    test=false;
+    test = false;
 }
 function createFirstLove() {
     articleOne.textContent = "Dans mes temps libre j'aime écrire autant des romans, des jeux de rôle et je les organise en tant que Maître de Jeu. Je pratique les jeux vidéo autant ceux de stratégie que d'aventure."
@@ -289,3 +326,4 @@ function createThiLove() {
 
 // }
 // tweetLonger();
+//Ajout classe active
