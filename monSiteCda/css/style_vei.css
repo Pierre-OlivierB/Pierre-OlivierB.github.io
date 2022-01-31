@@ -13,19 +13,19 @@
   }
   #testOneVeille{
   background: linear-gradient(to top, rgb(8, 8, 8,.6), rgb(246, 241, 241,.2)),
-  center no-repeat url("../img/screen_page_veille_exception.jpg");
+  center/contain no-repeat url("../img/screen_page_veille_exception.jpg");
   grid-area:testOneVeille;
   width: 60%;
   }
   #testTwoVeille{
   background: linear-gradient(to top, rgb(8, 8, 8,.6), rgb(246, 241, 241,.2)),
-  center no-repeat url("../img/screen_page_veille_threejs.jpg");
+  center/contain no-repeat url("../img/screen_page_veille_threejs.jpg");
   grid-area:testTwoVeille;
   width: 60%;
   }
   #testThreeVeille{
     background: linear-gradient(to top, rgb(8, 8, 8,.6), rgb(246, 241, 241,.2)),
-    center no-repeat url("../img/screen_page_veille_materialize.jpg");
+    center/contain no-repeat url("../img/screen_page_veille_materialize.jpg");
     grid-area:testThreeVeille;
     width: 60%;
     }
