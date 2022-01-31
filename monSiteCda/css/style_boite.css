@@ -65,7 +65,7 @@
 }
 .line_table{
   border: solid black 1px;
-  height: 10%;
+  height: 5%;
 }
 .card_turn{
   width: 300px;
@@ -77,6 +77,7 @@
 }
 .line_flex{
   display: flex;
+  min-width: 70px;
 }
 /* boîte 5 */
 .chronometre{
@@ -107,3 +108,15 @@ button{
   line-height: 1.5em;
   border: none
 }
+.newTable{
+  padding: 15px 5px;
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+  border-radius: 2px;
+}
+/* @media screen and (max-width:1000px) {
+  .white_card{
+    height: 250px;
+  }
+} */

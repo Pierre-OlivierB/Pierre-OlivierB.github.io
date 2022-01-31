@@ -16,9 +16,9 @@ while (!bool);
 
 function affiche(chaine) {
 
-    let alertReponse=document.querySelector("div");
+    let alertReponse=document.createElement("div");
     alertReponse.className="";
-    let affichCalculeForce=document.querySelector("span");
+    let affichCalculeForce=document.createElement("span");
     affichCalculeForce.className="";
 
     let ncp=0;
@@ -45,6 +45,11 @@ function affiche(chaine) {
     }
 }
 // boîte 3
+let ajoutClass = document.querySelector(".line_table")
+window.onload = ajouterClass();
+function ajouterClass() {
+    ajoutClass.classList.add("newTable");
+}
 
 function changerStyle() {
     let chiffre = document.querySelectorAll(".chiffre_choisi");
