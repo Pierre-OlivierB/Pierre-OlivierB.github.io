@@ -4,11 +4,11 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 // effet escalier:
 let testOneVeille = document.querySelector('#testOneVeille');
-let positionTestOneVeille = -430;
+let positionTestOneVeille = -620;
 let testTwoVeille = document.querySelector('#testTwoVeille');
-let positionTestTwoVeille = -820;
+let positionTestTwoVeille = -970;
 let testThreeVeille = document.querySelector('#testThreeVeille');
-let positionTestThreeVeille = -1220;
+let positionTestThreeVeille = -1370;
 // let testThreeVeille = document.querySelector('#testThreeVeille');
 // let positionTestThreeVeille = -1050;
 // let testFourVeille = document.querySelector('#testFourVeille');

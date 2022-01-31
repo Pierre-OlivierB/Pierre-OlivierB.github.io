@@ -8,13 +8,13 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 // effet escalier:
 let testOne = document.querySelector('#testOne');
-let positionTestOne = -350;
+let positionTestOne = -510;
 let testTwo = document.querySelector('#testTwo');
-let positionTestTwo = -400;
+let positionTestTwo = -550;
 let testThree = document.querySelector('#testThree');
-let positionTestThree = -650;
+let positionTestThree = -800;
 let testFour = document.querySelector('#testFour');
-let positionTestFour = -750;
+let positionTestFour = -800;
 testOne.setAttribute("style", `transform:translateY(${positionTestOne}px)`);
 testTwo.setAttribute("style", `transform:translateY(${positionTestTwo}px)`);
 testThree.setAttribute("style", `transform:translateY(${positionTestThree}px)`);

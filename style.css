@@ -20,7 +20,8 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateY(15px);  
+  transform: translateY(15px); 
+  min-width: 50px; 
 }
 
 html{
@@ -68,7 +69,9 @@ html{
     justify-content: space-around;
 }
 .nav_position{
-  transform: translate(25px,150px);
+  margin-top: 150px;
+  margin-left: 15px;
+  /* transform: translate(25px,150px); */
 }
 .three_right_buttons{
   width: 200px;
@@ -173,6 +176,14 @@ html{
 }
 .background_collapse{
   background-color: #556B2F;
+}
+.test{
+  transform: translateY(50px);
+}
+@media screen and (max-width: 600px) {
+  .web_title{
+    display: none;
+  }
 }
   /* test */
   /* fin test */
