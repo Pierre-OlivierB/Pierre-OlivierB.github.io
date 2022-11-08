@@ -2,48 +2,48 @@
     background-color: aquamarine;
     border: 1px solid black;
     text-align: center;
-  }
-  .container_veille{
-    display: grid;
+}
+.container_veille{
+  display: grid;
   grid-template: "testOneVeille testOneVeille" 300px
                   "testTwoVeille testTwoVeille"300px
                   "testThreeVeille testThreeVeille"300px
                   "testFourVeille testFourVeille" 300px;
   grid-gap: 15px;
   height: 800px;
-  overflow: scroll;
-  }
-  #testOneVeille{
+  /* overflow: scroll; */
+}
+#testOneVeille{
   background: linear-gradient(to top, rgb(8, 8, 8,.6), rgb(246, 241, 241,.2)),
   center/contain no-repeat url("../img/screen_page_veille_exception.jpg");
   grid-area:testOneVeille;
   width: 60%;
-  }
-  #testTwoVeille{
+}
+#testTwoVeille{
   background: linear-gradient(to top, rgb(8, 8, 8,.6), rgb(246, 241, 241,.2)),
   center/contain no-repeat url("../img/screen_page_veille_threejs.jpg");
   grid-area:testTwoVeille;
   width: 60%;
-  }
-  #testThreeVeille{
+}
+#testThreeVeille{
     background: linear-gradient(to top, rgb(8, 8, 8,.6), rgb(246, 241, 241,.2)),
     center/contain no-repeat url("../img/screen_page_veille_materialize.jpg");
     grid-area:testThreeVeille;
     width: 60%;
-    }
+}
   /*#testFourVeille{
   background-color: cadetblue;
   grid-area:testFourVeille;
   width: 60%;
   } */
-  .transformTestVeille{
+.transformTestVeille{
   transform: translateY(50px);
-  }
-  .experimentVeille{
+}
+.experimentVeille{
     height: 200px;
-  }
-  .clay{
+}
+.clay{
     display: flex;
     width: 100%;
     height: 100%;
-  }
+}

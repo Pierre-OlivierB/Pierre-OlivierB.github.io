@@ -69,7 +69,7 @@
         height: 700px;
     }
     .card_desc_profil {
-        overflow: scroll;
+        /* overflow: scroll; */
         height: 100%;
     }
     .padding_cont {
