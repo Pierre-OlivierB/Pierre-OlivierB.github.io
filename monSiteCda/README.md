@@ -23,6 +23,12 @@
 -Structure : à faire.
 -Contenu: à faire.
 
+### Partie : Veille
+
+- Articles à cc sur le site (site CDA down)
+- Faire une partie veille
+- Ajouter les tips git / github
+
 ## Idées
 
 Mettre des commentaires dans les pages pour expliquer les démarches.
