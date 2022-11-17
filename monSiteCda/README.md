@@ -1,18 +1,30 @@
 # monSiteCda
-## List To DO:
 
-### Partie: Présentation
+## List To DO :
+
+### Partie : Accueil
+
+-passage en js
+-tout passer en injection
+-ajouter de l'accessibilité
+-retaper la structure du projet
+-ajouter du texte (400 mots min.)
+-ajouter de l'espace entre les parties
+
+### Partie : Présentation
 
 -ajouter un ol aux li ".cont_head_arti" (sup les points devant)
 -ajouter la partie active : il faut qu'elle soit soulignée
 -ajouter les parties non actives grisée
 -ajouter encadré à mon profil en haut à droite.
 
-### Partie: Plan du site (si le reste fini)
+### Partie : Plan du site (si le reste fini)
+
 -Structure : à faire.
 -Contenu: à faire.
 
 ## Idées
+
 Mettre des commentaires dans les pages pour expliquer les démarches.
 
 ## Done
@@ -38,4 +50,3 @@ Partie: index
 -Contenu: à ajuster.
 Partie: barreNav
 -Contenu à ranger.
-
