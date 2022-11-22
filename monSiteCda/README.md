@@ -5,7 +5,7 @@
 ### Partie : Accueil
 
 -passage en js
--tout passer en injection
+-tout passer en injection (bécessite NodeJs)
 -ajouter de l'accessibilité
 -retaper la structure du projet
 -ajouter du texte (400 mots min.)
