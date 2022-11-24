@@ -67,7 +67,7 @@ header.innerHTML = `
             </li>
         </ul>
         <a href="#" data-target="slide-out" class="sidenav-trigger" id='nav_target'><img src="./monSiteCda/img/nav_button.png"
-                class="nav_position"></a>
+                class="nav_position" id="img-nav"></a>
  `;
 
 document.addEventListener("DOMContentLoaded", function () {
