@@ -17,6 +17,13 @@
 -ajouter la partie active : il faut qu'elle soit soulignée
 -ajouter les parties non actives grisée
 -ajouter encadré à mon profil en haut à droite.
+-redirection sur les réalisations et idées
+-design pour faire comprendre qu'il faut cliquer sur les autres titres pour générer le contenu
+-former des similis tweet, regrouper dans les parts des parties
+-mieux centrer
+-utiliser innerHTML au lieu du content ou mettre le squelette et cibler différemment
+-mettre de l'intéraction avec les faux boutons
+-mettre à jour les informations
 
 ### Partie : Plan du site (si le reste fini)
 

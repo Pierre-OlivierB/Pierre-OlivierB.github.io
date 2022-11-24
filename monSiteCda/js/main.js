@@ -2,16 +2,16 @@
 content.innerHTML = `
         <div class="container">
             <div data-target="test" class="card_presentation img_card_pres" id="testOne">
-                <a href="./monSiteCda/presentation.html" class="card_index"></a>
+                <a href="./monSiteCda/presentation.html" class="card_index"><img src="./monSiteCda/img/screen_page_description.jpg" alt="redirection vers présentation"></a>
             </div>
             <div data-target="test2" class="card_presentation  img_card_rea transformTest" id="testTwo">
-                <a href="./monSiteCda/realisations.html" class="card_index"></a>
+                <a href="./monSiteCda/realisations.html" class="card_index"><img src="./monSiteCda/img/screen_page_realisations.jpg" alt="redirection vers réalisations"></a>
             </div>
             <div data-target="test3" class="card_presentation img_card_vei" id="testThree">
-                <a href="" class="card_index"></a>
+                <a href="" class="card_index"><img src="./monSiteCda/img/screen_page_veille.jpg" alt="redirection vers veilles"></a>
             </div>
             <div data-target="test4" class="card_presentation transformTest img_card_cont" id="testFour">
-                <a href="./monSiteCda/contact.html" class="card_index"></a>
+                <a href="./monSiteCda/contact.html" class="card_index"><img src="./monSiteCda/img/screen_page_contact.jpg" alt="redirection vers contact"></a>
             </div>
         </div>
 `;

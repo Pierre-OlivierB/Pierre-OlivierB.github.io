@@ -4,11 +4,11 @@ header.innerHTML = `
 <div class="page_title">Présentation</div>
 <div class="three_right_buttons">
     <div class="nav_card_link"><a href="https://www.linkedin.com/in/pierre-olivier-baudino-5a49511a3/"
-            class="nav_redirec_contact" target="_blank" rel="noopener noreferrer"></a></div>
+            class="nav_redirec_contact" target="_blank" rel="noopener noreferrer"><img src="./img/linkdin_button.png" alt="linkedin website"></a></div>
     <div class="nav_card_twit"><a href="https://github.com/Pierre-OlivierB" class="nav_redirec_contact"
-            target="_blank" rel="noopener noreferrer"></a></div>
+            target="_blank" rel="noopener noreferrer"><img src="./img/github_button.png" alt="git hub website"></a></div>
     <div class="nav_card_gitH"><a href="./warning.html" class="nav_redirec_contact" target="_blank"
-            rel="noopener noreferrer"></a></div>
+            rel="noopener noreferrer"><img src="./img/warning_button.png" alt="tools box"></a></div>
 </div>
 </nav>
 
@@ -56,7 +56,7 @@ header.innerHTML = `
     </ul>
 </li>
 </ul>
-<a href="#" data-target="slide-out" class="sidenav-trigger"><img src="./img/nav_button.png"
+<a href="#" data-target="slide-out" class="sidenav-trigger" id='nav_target'><img src="./img/nav_button.png"
     class="nav_position"></a>
 
  `;
