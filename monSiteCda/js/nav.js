@@ -1,3 +1,4 @@
+let nav = window.location.href.split("/")[5].split(".")[0];
 header.innerHTML = `
 <nav id="top_nav" class="black">
 <a href="../index.html" class="web_title">Bienvenue sur mon site CDA</a>
@@ -22,12 +23,32 @@ header.innerHTML = `
     </div>
 </li>
 <li><a class="waves-effect text_align_cent inactive_a_white" href="../index.html">Accueil</a></li>
-<li class="active active_li_white"><a class="waves-effect text_align_cent active_a_white"
+<li ${
+  nav.includes("presentation") ? "class='active active_li_white'" : ""
+}><a class="waves-effect text_align_cent ${
+  nav.includes("presentation") ? "active_a_white" : "inactive_a_white"
+}"
         href="presentation.html">Présentation</a></li>
-<li><a class="waves-effect text_align_cent inactive_a_white" href="realisations.html">Réalisations</a></li>
-<li><a class="waves-effect text_align_cent inactive_a_white">Veille (Work in progress)</a></li>
-<li><a class="waves-effect text_align_cent inactive_a_white" href="contact.html">Contact</a></li>
-<li><a class="waves-effect text_align_cent inactive_a_white" href="boite_a_idees.html">Boîte à idées</a>
+<li ${
+  nav.includes("realisations") ? "class='active active_li_white'" : ""
+}><a class="waves-effect text_align_cent ${
+  nav.includes("realisations") ? "active_a_white" : "inactive_a_white"
+}" href="realisations.html">Réalisations</a></li>
+<li ${
+  nav.includes("veilles") ? "class='active active_li_white'" : ""
+}><a class="waves-effect text_align_cent ${
+  nav.includes("veilles") ? "active_a_white" : "inactive_a_white"
+}">Veille (Work in progress)</a></li>
+<li ${
+  nav.includes("contact") ? "class='active active_li_white'" : ""
+}><a class="waves-effect text_align_cent ${
+  nav.includes("contact") ? "active_a_white" : "inactive_a_white"
+}" href="contact.html">Contact</a></li>
+<li ${
+  nav.includes("boite_a_idees") ? "class='active active_li_white'" : ""
+}><a class="waves-effect text_align_cent ${
+  nav.includes("boite_a_idees") ? "active_a_white" : "inactive_a_white"
+}" href="boite_a_idees.html">Boîte à idées</a>
 </li>
 <li class="no-padding">
     <ul class="collapsible collapsible-accordion">
