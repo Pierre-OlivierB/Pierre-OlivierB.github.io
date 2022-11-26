@@ -57,16 +57,6 @@ header.innerHTML = `
                     class="material-icons">arrow_drop_down</i></a>
             <div class="collapsible-body">
                 <ul>
-                    <!-- <li><a href="article5_15_01_22.html" class="background_collapse text_align_cent">GIT HUB
-                            en MULTI: Conflits</a></li>
-                    <li><a href="article4_15_01_22.html" class="background_collapse text_align_cent">GIT HUB
-                            en MULTI: Vérifications</a></li>
-                    <li><a href="article3_15_01_22.html" class="background_collapse text_align_cent">GIT HUB
-                            en MULTI: Installation</a></li>
-                    <li><a href="article2_15_01_22.html" class="background_collapse text_align_cent">GIT HUB
-                            en SOLO</a></li>
-                    <li><a href="article_15_01_22.html" class="background_collapse text_align_cent">GIT HUB
-                            la plateforme</a></li> -->
                     <li><a href=""
                             class="background_collapse text_align_cent">GIT:
                             Article

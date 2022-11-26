@@ -26,17 +26,17 @@ let contFootArtiThree = document.createElement("div");
 let imgVerifToArt = document.createElement("li");
 imgVerifToArt.classList.add("img_verif_top_art");
 let timeArtCreation = document.createElement("li");
-timeArtCreation.textContent = "@Montpellier . 1sept";
+timeArtCreation.textContent = "@Montpellier . 1sept 22";
 // top of 2sd articles
 let imgVerifToArtTwo = document.createElement("li");
 imgVerifToArtTwo.classList.add("img_verif_top_art");
 let timeArtCreationTwo = document.createElement("li");
-timeArtCreationTwo.textContent = "@Montpellier . 1sept";
+timeArtCreationTwo.textContent = "@Montpellier . 1sept 22";
 // top of 3thd articles
 let imgVerifToArtThree = document.createElement("li");
 imgVerifToArtThree.classList.add("img_verif_top_art");
 let timeArtCreationThree = document.createElement("li");
-timeArtCreationThree.textContent = "@Montpellier . 1sept";
+timeArtCreationThree.textContent = "@Montpellier . 1sept 22";
 // top of desciption 1rst articles
 let whoIAm = document.createElement("li");
 // top of desciption 2sd articles
@@ -157,9 +157,9 @@ function createThird() {
 // creation 1srt article
 function createFirstDesc() {
   articleOne.textContent =
-    "De 2018 à 2021 j'étais Surveillant de l'étude à l'Ecole Perceval (Primaire, Collège, Lycée) dans la ville de Chatou.";
+    "En 2022 j'ai réalisé un stage de 2mois (remote et présentiel) auprès d'une voix-off française afin de monter son site internet via WordPress.";
   articleOne.textContent +=
-    " Le coeur de mes actions tournait autour de la gestion de salle d'étude, le suivi des élèves et de leur carnets, les réunions avec les parents et biensur la participation aux événements de l'école.";
+    " Le coeur de mes actions tournait autour de la conception , la réalisation du site, son déploiement et l'écrciture de son fascicule d'utilisation.";
   whoIAm.textContent = "Qui je suis?";
   createFirst();
   test = false;
@@ -167,9 +167,9 @@ function createFirstDesc() {
 // creation 2sd article
 function createSecDesc() {
   articleTwo.textContent =
-    "De 2016 à 2018 j'étais Assistant d'éducation au Lycée Polyvalent Jeanne d'Arc de Rennes et au Lycée Polyvalent Jean Baptiste Poquelin de Saint Germain en Laye l'année d'après.";
+    "De 2016 à 2021 j'étais  Surveillant de l'étude à l'Ecole Perceval de Chatou. Dans ce même écart de temps j'ai été Assistant d'éducation au Lycée Polyvalent Jeanne d'Arc de Rennes et au Lycée Polyvalent Jean Baptiste Poquelin de Saint Germain en Laye l'année d'après.";
   articleTwo.textContent +=
-    " Mes actions tournaient autour du suivi des appels, de l'accompagnement des élèves et de la surveillance d'examens.";
+    " Mes actions tournaient autour du suivi des appels, de l'accompagnement des élèves, la surveillance d'examens et biensur la participation aux événements de l'école.";
   whoIAmTwo.textContent = "Qui je suis?";
   createSecond();
   test = false;
@@ -212,21 +212,21 @@ function createLangPage() {
 // 1rst article
 function createFirstLang() {
   articleOne.textContent =
-    "Les Langages que je pratique sont: Html, Css, JS, Java!";
+    "Les Langages que je pratique sont : Html, Css, JS, Java, Php, Python!";
   whoIAm.textContent = "Langages";
   createFirst();
 }
 // 2sd article
 function createSecLang() {
   articleTwo.textContent =
-    "Les Frameworks que j'utilise sont: Bootstrap, Materialize, jQuery, Three.js";
+    "Les Frameworks que j'utilise sont : Bootstrap, Materialize, jQuery, Three.js";
   whoIAmTwo.textContent = "Langages";
   createSecond();
 }
 // 3thrd article
 function createThiLang() {
   articleThree.textContent =
-    "Il nous reste les Logiciels que j'utilise: Visual Studio Code, draw.io, looping-mcd, FileZilla, WordPress, Fetch, Vite.js, GitHub, Eclypse.";
+    "Il nous reste les Logiciels que j'utilise : Visual Studio Code, draw.io, looping-mcd, FileZilla, WordPress, Fetch, Vite.js, GitHub, Eclypse.";
   whoIAmThree.textContent = "Langages";
   createThird();
 }
@@ -258,7 +258,7 @@ function createMedPage() {
 }
 function createFirstMed() {
   articleOne.textContent =
-    "Voici ma dernière formation elle a débuté en Septembre 2021 et elle continue jusqu'en Juin 2022. Elle amène au titre professionnel de Concepteur Développeur D'Applications (CDA) et cela grâce au GRETA Montpellier.";
+    "Voici ma dernière formation : titre professionnel de Concepteur Développeur D'Applications (CDA) en 2022 et cela grâce au GRETA Montpellier. Depuis je suis la formation de FromScratch un vidéaste porté sur le Front-End. J'ai également suivi le mooc de l'ANSII afin de me sensibiliser à la cybersécurité.";
   whoIAmTwo.textContent = "Médias?";
   createFirst();
 }
@@ -315,12 +315,11 @@ function createSecLove() {
 }
 function createThiLove() {
   articleThree.textContent =
-    "Je continue de lire l'actualité sur de nombreux sujet comme la technologie, science et maintenant le langage. Grâce à ma nouvelle formation, il me plaît de jouer avec certain codes.";
+    "Je continue de lire l'actualité sur de nombreux sujet comme la technologie (comptoire du hardware), science et maintenant le langage (les nombreux comptes à découvrir dans la section warning). Grâce à ma nouvelle formation, il me plaît de jouer avec certain codes.";
   whoIAmThree.textContent = "J'aime?";
   createThird();
 }
 // function tweetLonger() {
-
 // }
 // tweetLonger();
 //Ajout classe active
