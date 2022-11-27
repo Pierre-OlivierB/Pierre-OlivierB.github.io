@@ -63,33 +63,23 @@ const article_1 = `
               <b>Materialize</b> gives really good feedback experiences'.</p>
       </article>
 `;
-// window.addEventListener("click", () => console.log(window.));
+
 let articles = document.querySelectorAll(".article");
 function article() {
   presentation.innerHTML = article_1;
-  // console.log(window.target);
-  // let articles = window.target;
-  // switch (key) {
-  //   case value:
-  //     break;
-
-  //   default:
-  //     break;
-  // }
 }
 articles.forEach((article) => {
   article.addEventListener("click", (e) => {
     console.log(e.path[1].id);
-    presentation.innerHTML = window[e.path[1].id];
+    let content = e.path[1].id;
+    switch (content) {
+      case "article_1":
+        presentation.innerHTML = article_1;
+        break;
+
+      default:
+        break;
+    }
   });
 });
 window.onload = article();
-// function listeners() {
-//   for (i = 1; i <= 3; i++) {
-//     let articles = "article_" + i;
-//     console.log(articles);
-//     articles.addEventListener("click", () => {
-//       articles();
-//     });
-//   }
-// }
