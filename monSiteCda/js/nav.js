@@ -1,8 +1,29 @@
 let nav = window.location.href.split("/")[5].split(".")[0];
+let title;
+switch (nav) {
+  case "presentation":
+    title = "Présentation";
+    break;
+  case "realisations":
+    title = "Réalisations";
+    break;
+  case "veille":
+    title = "Veille";
+    break;
+  case "contact":
+    title = "Contact";
+    break;
+  case "boite_a_idees":
+    title = "Boîte à idées";
+    break;
+
+  default:
+    break;
+}
 header.innerHTML = `
 <nav id="top_nav" class="black">
 <a href="../index.html" class="web_title">Bienvenue sur mon site CDA</a>
-<div class="page_title">Présentation</div>
+<div class="page_title">${title}</div>
 <div class="three_right_buttons">
     <div class="nav_card_link"><a href="https://www.linkedin.com/in/pierre-olivier-baudino-5a49511a3/"
             class="nav_redirec_contact" target="_blank" rel="noopener noreferrer"><img src="./img/linkdin_button.png" alt="linkedin website"></a></div>
@@ -35,10 +56,10 @@ header.innerHTML = `
   nav.includes("realisations") ? "active_a_white" : "inactive_a_white"
 }" href="realisations.html">Réalisations</a></li>
 <li ${
-  nav.includes("veilles") ? "class='active active_li_white'" : ""
+  nav.includes("veille") ? "class='active active_li_white'" : ""
 }><a class="waves-effect text_align_cent ${
-  nav.includes("veilles") ? "active_a_white" : "inactive_a_white"
-}">Veille (Work in progress)</a></li>
+  nav.includes("veille") ? "active_a_white" : "inactive_a_white"
+}" href="veille.html">Veille</a></li>
 <li ${
   nav.includes("contact") ? "class='active active_li_white'" : ""
 }><a class="waves-effect text_align_cent ${

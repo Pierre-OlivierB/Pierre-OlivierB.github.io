@@ -31,7 +31,7 @@ header.innerHTML = `
                     href="./monSiteCda/presentation.html">Présentation</a></li>
             <li><a class="waves-effect text_align_cent inactive_a_white"
                     href="./monSiteCda/realisations.html">Réalisations</a></li>
-            <li><a class="waves-effect text_align_cent inactive_a_white">Veille (Work in progress)</a></li>
+            <li><a class="waves-effect text_align_cent inactive_a_white" href="./monSiteCda/veille.html">Veille</a></li>
             <li><a class="waves-effect text_align_cent inactive_a_white" href="./monSiteCda/contact.html">Contact</a>
             </li>
             <li><a class="waves-effect text_align_cent inactive_a_white" href="./monSiteCda/boite_a_idees.html">Boîte à
@@ -43,20 +43,6 @@ header.innerHTML = `
                                 class="material-icons">arrow_drop_down</i></a>
                         <div class="collapsible-body">
                             <ul>
-                                <!-- <li><a href="./monSiteCda/article5_15_01_22.html" class="background_collapse text_align_cent">GIT HUB
-                                        en MULTI: Conflits</a></li>
-                                <li><a href="./monSiteCda/article4_15_01_22.html" class="background_collapse text_align_cent">GIT HUB
-                                        en MULTI: Vérifications</a></li>
-                                <li><a href="./monSiteCda/article3_15_01_22.html" class="background_collapse text_align_cent">GIT HUB
-                                        en MULTI: Installation</a></li>
-                                <li><a href="./monSiteCda/article2_15_01_22.html" class="background_collapse text_align_cent">GIT HUB
-                                        en SOLO</a></li>
-                                <li><a href="./monSiteCda/article_15_01_22.html" class="background_collapse text_align_cent">GIT HUB
-                                        la plateforme</a></li>
-                                    <li><a href="./monSiteCda/articles/article_14_01_22.html"
-                                        class="background_collapse text_align_cent">GIT:
-                                        Article
-                                        du 14/01/21</a></li> -->
                                 <li><a href="">GIT:
                                         Article
                                         du 14/01/21</a></li>

@@ -1,49 +1,53 @@
-.card_veille{
-    background-color: aquamarine;
-    border: 1px solid black;
-    text-align: center;
+.article-choice {
+  width: 100%;
+  height: 10%;
+  margin-bottom: 150px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
 }
-.container_veille{
-  display: grid;
-  grid-template: "testOneVeille testOneVeille" 300px
-                  "testTwoVeille testTwoVeille"300px
-                  "testThreeVeille testThreeVeille"300px
-                  "testFourVeille testFourVeille" 300px;
-  grid-gap: 15px;
-  height: 800px;
-  /* overflow: scroll; */
+
+.article {
+  max-width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  background: linear-gradient(to left, #556B2F, #808000);
 }
-#testOneVeille{
-  background: linear-gradient(to top, rgb(8, 8, 8,.6), rgb(246, 241, 241,.2)),
-  center/contain no-repeat url("../img/screen_page_veille_exception.jpg");
-  grid-area:testOneVeille;
-  width: 60%;
+
+.article:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  font-weight: bolder;
 }
-#testTwoVeille{
-  background: linear-gradient(to top, rgb(8, 8, 8,.6), rgb(246, 241, 241,.2)),
-  center/contain no-repeat url("../img/screen_page_veille_threejs.jpg");
-  grid-area:testTwoVeille;
-  width: 60%;
+
+.article:hover h6 {
+  font-weight: bold;
 }
-#testThreeVeille{
-    background: linear-gradient(to top, rgb(8, 8, 8,.6), rgb(246, 241, 241,.2)),
-    center/contain no-repeat url("../img/screen_page_veille_materialize.jpg");
-    grid-area:testThreeVeille;
-    width: 60%;
+
+.article-active h6 {
+  font-weight: bold;
 }
-  /*#testFourVeille{
-  background-color: cadetblue;
-  grid-area:testFourVeille;
-  width: 60%;
-  } */
-.transformTestVeille{
-  transform: translateY(50px);
+
+.article h6 {
+  padding: 5px;
+  color: white;
 }
-.experimentVeille{
-    height: 200px;
+
+#presentation {
+  margin-bottom: 150px;
+  max-height: 1800px;
 }
-.clay{
-    display: flex;
-    width: 100%;
-    height: 100%;
+
+.space {
+  height: 100px;
+  width: 100px;
+}
+
+#article-presentation p {
+  background: rgb(235, 235, 235);
+  color: black;
+  padding: 5px;
+  border-radius: 5px;
 }
