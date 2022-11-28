@@ -37,7 +37,7 @@
 
 #presentation {
   margin-bottom: 150px;
-  max-height: 1800px;
+  max-height: 5000px;
 }
 
 .space {
@@ -50,4 +50,9 @@
   color: black;
   padding: 5px;
   border-radius: 5px;
+}
+
+#article-presentation img {
+  max-width: 100%;
+  max-height: 100%;
 }
