@@ -174,8 +174,12 @@ const article_3 = `
 `;
 
 let articles = document.querySelectorAll(".article");
+const art_1 = document.getElementById("article_1");
+const art_2 = document.getElementById("article_2");
+const art_3 = document.getElementById("article_3");
 function article() {
   presentation.innerHTML = article_1;
+  art_1.classList.add("article-active");
 }
 articles.forEach((article) => {
   article.addEventListener("click", (e) => {
@@ -184,12 +188,21 @@ articles.forEach((article) => {
     switch (content) {
       case "article_1":
         presentation.innerHTML = article_1;
+        art_1.classList.add("article-active");
+        art_2.classList.remove("article-active");
+        art_3.classList.remove("article-active");
         break;
       case "article_2":
         presentation.innerHTML = article_2;
+        art_2.classList.add("article-active");
+        art_1.classList.remove("article-active");
+        art_3.classList.remove("article-active");
         break;
       case "article_3":
         presentation.innerHTML = article_3;
+        art_3.classList.add("article-active");
+        art_2.classList.remove("article-active");
+        art_1.classList.remove("article-active");
         break;
       default:
         break;
