@@ -65,7 +65,23 @@ header.innerHTML = `
 }><a class="waves-effect text_align_cent ${
   nav.includes("contact") ? "active_a_white" : "inactive_a_white"
 }" href="contact.html">Contact</a></li>
-<li ${
+
+</ul>
+<a href="#" data-target="slide-out" class="sidenav-trigger" id='nav_target'><img src="./img/nav_button.png"
+    class="nav_position"></a>
+
+ `;
+document.addEventListener("DOMContentLoaded", function () {
+  let side = document.querySelectorAll(".sidenav");
+  M.Sidenav.init(side);
+  let elems = document.querySelectorAll(".collapsible");
+  let instances = M.Collapsible.init(elems, {
+    accordion: false,
+  });
+});
+
+{
+  /* <li ${
   nav.includes("boite_a_idees") ? "class='active active_li_white'" : ""
 }><a class="waves-effect text_align_cent ${
   nav.includes("boite_a_idees") ? "active_a_white" : "inactive_a_white"
@@ -86,17 +102,5 @@ header.innerHTML = `
             </div>
         </li>
     </ul>
-</li>
-</ul>
-<a href="#" data-target="slide-out" class="sidenav-trigger" id='nav_target'><img src="./img/nav_button.png"
-    class="nav_position"></a>
-
- `;
-document.addEventListener("DOMContentLoaded", function () {
-  let side = document.querySelectorAll(".sidenav");
-  M.Sidenav.init(side);
-  let elems = document.querySelectorAll(".collapsible");
-  let instances = M.Collapsible.init(elems, {
-    accordion: false,
-  });
-});
+</li> */
+}

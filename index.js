@@ -34,23 +34,6 @@ header.innerHTML = `
             <li><a class="waves-effect text_align_cent inactive_a_white" href="./monSiteCda/veille.html">Veille</a></li>
             <li><a class="waves-effect text_align_cent inactive_a_white" href="./monSiteCda/contact.html">Contact</a>
             </li>
-            <li><a class="waves-effect text_align_cent inactive_a_white" href="./monSiteCda/boite_a_idees.html">Boîte à
-                    idées</a></li>
-            <li class="no-padding">
-                <ul class="collapsible collapsible-accordion">
-                    <li>
-                        <a class="collapsible-header text_align_cent inactive_a_white">Articles<i
-                                class="material-icons">arrow_drop_down</i></a>
-                        <div class="collapsible-body">
-                            <ul>
-                                <li><a href="">GIT:
-                                        Article
-                                        du 14/01/21</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </li>
         </ul>
         <a href="#" data-target="slide-out" class="sidenav-trigger" id='nav_target'><img src="./monSiteCda/img/nav_button.png"
                 class="nav_position" id="img-nav"></a>
@@ -64,3 +47,23 @@ document.addEventListener("DOMContentLoaded", function () {
     accordion: false,
   });
 });
+
+{
+  /* <li><a class="waves-effect text_align_cent inactive_a_white" href="./monSiteCda/boite_a_idees.html">Boîte à
+idées</a></li>
+<li class="no-padding">
+<ul class="collapsible collapsible-accordion">
+<li>
+    <a class="collapsible-header text_align_cent inactive_a_white">Articles<i
+            class="material-icons">arrow_drop_down</i></a>
+    <div class="collapsible-body">
+        <ul>
+            <li><a href="">GIT:
+                    Article
+                    du 14/01/21</a></li>
+        </ul>
+    </div>
+</li>
+</ul>
+</li> */
+}
