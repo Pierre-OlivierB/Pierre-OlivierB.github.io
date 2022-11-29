@@ -16,6 +16,8 @@ switch (nav) {
   case "boite_a_idees":
     title = "Boîte à idées";
     break;
+  case "warning":
+    title = "Aide";
 
   default:
     break;
