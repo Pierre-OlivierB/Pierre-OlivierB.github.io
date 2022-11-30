@@ -202,15 +202,17 @@ html {
   grid-row: 2;
 }
 
-.transformTest {
-  transform: translateY(50px);
-}
 
 .img_card_pres {
   background: linear-gradient(to top, rgb(8, 8, 8, .6), rgb(246, 241, 241, .2));
 }
 
 .card_index img {
+  height: 200px;
+  width: 200px;
+}
+
+.card_rea img {
   height: 200px;
   width: 200px;
 }
