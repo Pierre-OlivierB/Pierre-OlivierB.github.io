@@ -29,7 +29,6 @@ testThree.setAttribute("style", `transform:translateY(${positionTestThree}px)`);
 testFour.setAttribute("style", `transform:translateY(${positionTestFour}px)`);
 
 if (window.innerWidth <= 1000) {
-  console.log("test");
   positionTestOne = positionTestOne * 1.2;
   positionTestTwo = positionTestTwo * 1.2;
   positionTestThree = positionTestThree * 1.2;

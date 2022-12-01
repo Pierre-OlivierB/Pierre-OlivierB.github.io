@@ -1,4 +1,4 @@
-let nav = window.location.href.split("/")[5].split(".")[0];
+let nav = window.location.href.split("/")[4].split(".")[0];
 let title;
 function navigation() {
   console.log(nav);
