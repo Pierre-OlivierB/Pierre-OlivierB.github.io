@@ -1,27 +1,38 @@
 let nav = window.location.href.split("/")[5].split(".")[0];
 let title;
-switch (nav) {
-  case "presentation":
-    title = "Présentation";
-    break;
-  case "realisations":
-    title = "Réalisations";
-    break;
-  case "veille":
-    title = "Veille";
-    break;
-  case "contact":
-    title = "Contact";
-    break;
-  case "boite_a_idees":
-    title = "Boîte à idées";
-    break;
-  case "warning":
-    title = "Aide";
-
-  default:
-    break;
+function navigation() {
+  console.log(nav);
+  switch (nav) {
+    case "index":
+      title = "Accueil";
+      break;
+    case "presentation":
+      title = "Présentation";
+      break;
+    case "realisations":
+      title = "Réalisations";
+      break;
+    case "veille":
+      title = "Veille";
+      break;
+    case "contact":
+      title = "Contact";
+      break;
+    case "boite_a_idees":
+      title = "Boîte à idées";
+      break;
+    case "warning":
+      title = "Aide";
+      break;
+    default:
+      title = "Accueil";
+      break;
+  }
+  console.log(title);
+  return title;
 }
+Promise.resolve(navigation()).then(console.log(title));
+
 header.innerHTML = `
 <nav id="top_nav" class="black">
 <a href="../index.html" class="web_title">Bienvenue sur mon site CDA</a>
@@ -45,7 +56,11 @@ header.innerHTML = `
                 BAUDINO</span></a>
     </div>
 </li>
-<li><a class="waves-effect text_align_cent inactive_a_white" href="../index.html">Accueil</a></li>
+<li ${
+  nav.includes("index") ? "class='active active_li_white'" : ""
+}><a class="waves-effect text_align_cent ${
+  nav.includes("index") ? "active_a_white" : "inactive_a_white"
+}" href="../index.html">Accueil</a></li>
 <li ${
   nav.includes("presentation") ? "class='active active_li_white'" : ""
 }><a class="waves-effect text_align_cent ${
@@ -73,6 +88,7 @@ header.innerHTML = `
     class="nav_position" id="img-nav"></a>
 
  `;
+
 document.addEventListener("DOMContentLoaded", function () {
   let side = document.querySelectorAll(".sidenav");
   M.Sidenav.init(side);
@@ -81,28 +97,3 @@ document.addEventListener("DOMContentLoaded", function () {
     accordion: false,
   });
 });
-
-{
-  /* <li ${
-  nav.includes("boite_a_idees") ? "class='active active_li_white'" : ""
-}><a class="waves-effect text_align_cent ${
-  nav.includes("boite_a_idees") ? "active_a_white" : "inactive_a_white"
-}" href="boite_a_idees.html">Boîte à idées</a>
-</li>
-<li class="no-padding">
-    <ul class="collapsible collapsible-accordion">
-        <li>
-            <a class="collapsible-header text_align_cent inactive_a_white">Articles<i
-                    class="material-icons">arrow_drop_down</i></a>
-            <div class="collapsible-body">
-                <ul>
-                    <li><a href=""
-                            class="background_collapse text_align_cent">GIT:
-                            Article
-                            du 14/01/21</a></li>
-                </ul>
-            </div>
-        </li>
-    </ul>
-</li> */
-}
