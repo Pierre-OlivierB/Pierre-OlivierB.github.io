@@ -1,7 +1,7 @@
-let nav = window.location.href.split("/")[4].split(".")[0];
+const loc = window.location.href.split("/");
+let nav = loc[loc.length - 1].split(".")[0];
 let title;
 function navigation() {
-  console.log(nav);
   switch (nav) {
     case "index":
       title = "Accueil";
@@ -28,7 +28,6 @@ function navigation() {
       title = "Accueil";
       break;
   }
-  console.log(title);
   return title;
 }
 Promise.resolve(navigation()).then(console.log(title));
